@@ -13,9 +13,8 @@ Features Implemented,
 
 
 ### Usages
+In your build file add
 ##### Gradle
-In your buid.gradle file add
-
 ```
 allprojects {
     repositories {
@@ -29,6 +28,24 @@ And
 dependencies {
     compile 'com.github.s4kibs4mi:PultusORM:beta-0.0.1'
 }
+```
+
+##### Maven
+```
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+	</repository>
+</repositories>
+```
+And
+```
+<dependency>
+    <groupId>com.github.s4kibs4mi</groupId>
+    <artifactId>PultusORM</artifactId>
+    <version>beta-0.0.1</version>
+</dependency>
 ```
 
 ### Examples
