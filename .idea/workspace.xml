@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5659d2b4-6d05-48dc-9bb5-673b6fda6cdc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="PultusORM.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,8 +73,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="60">
-                <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <first_editor relative-caret-position="555">
+                <caret line="82" column="3" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="3" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -141,7 +140,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="devs" />
       </map>
     </option>
   </component>
@@ -1218,7 +1217,7 @@
       <workItem from="1475648243558" duration="877000" />
       <workItem from="1475651413034" duration="433000" />
       <workItem from="1475652655663" duration="53000" />
-      <workItem from="1475652764766" duration="951000" />
+      <workItem from="1475652764766" duration="1053000" />
     </task>
     <task id="LOCAL-00001" summary="log blocked">
       <created>1475652698299</created>
@@ -1241,11 +1240,18 @@
       <option name="project" value="LOCAL" />
       <updated>1475653334464</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="maven usaged added">
+      <created>1475654889103</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1475654889104</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2314000" />
+    <option name="totallyTimeSpent" value="2416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
@@ -1294,7 +1300,8 @@
     <MESSAGE value="log blocked" />
     <MESSAGE value="usages added" />
     <MESSAGE value="dev branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="dev branch" />
+    <MESSAGE value="maven usaged added" />
+    <option name="LAST_COMMIT_MESSAGE" value="maven usaged added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1549,8 +1556,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <first_editor relative-caret-position="555">
+            <caret line="82" column="3" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="3" />
             <folding />
           </first_editor>
           <second_editor />
