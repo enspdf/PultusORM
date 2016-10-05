@@ -49,6 +49,8 @@ And
 </dependency>
 ```
 
+[More...](https://jitpack.io/#s4kibs4mi/PultusORM/beta-0.0.2)
+
 ### Examples
 
 ##### Insert Value
