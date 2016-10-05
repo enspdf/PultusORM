@@ -101,7 +101,7 @@ val condition: PultusORMCondition = PultusORMCondition()
 condition.eq("userId", 802505126)
 condition.and()     // Concating two condition with and
 condition.eq("age", 24)
-condition.sort("age", PultusORMQuery.Sort.DESCENDING)
+condition.sort("age", PultusORMQuery.Sort.DESCENDING)   // this must be at the last of condition
 
 val result: MutableList<Any> = pultusORM.get(User(), condition)
 for (it in result) {
@@ -113,7 +113,7 @@ for (it in result) {
 }
 ```
 
-##### Update clazz
+##### Update Value
 ```
 // values will be updated based on this condition
 val condition: PultusORMCondition = PultusORMCondition()
