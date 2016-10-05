@@ -2,7 +2,7 @@
 PultusORM is a sqlite ORM library for kotlin on top of sqlite jdbc driver.
 
 Dev status : Active<br>
-Current Version : beta-0.0.1
+Current Version : beta-0.0.2
 
 ##
 Features Implemented,
@@ -10,6 +10,7 @@ Features Implemented,
 * Retrieve
 * Update
 * Delete
+* Drop
 
 
 ### Usages
