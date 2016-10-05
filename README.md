@@ -26,7 +26,7 @@ allprojects {
 And
 ```
 dependencies {
-    compile 'com.github.s4kibs4mi:PultusORM:beta-0.0.1'
+    compile 'com.github.s4kibs4mi:PultusORM:beta-0.0.2'
 }
 ```
 
@@ -44,7 +44,7 @@ And
 <dependency>
     <groupId>com.github.s4kibs4mi</groupId>
     <artifactId>PultusORM</artifactId>
-    <version>beta-0.0.1</version>
+    <version>beta-0.0.2</version>
 </dependency>
 ```
 
