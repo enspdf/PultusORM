@@ -19,7 +19,7 @@ import java.lang.reflect.Type
  * := Coffee : Dream : Code
  */
 
-var isDebugEnabled = true
+var isDebugEnabled = false
 val objectToJsonConverter: Gson = GsonBuilder().create()
 
 fun log(key: String, value: String) {
