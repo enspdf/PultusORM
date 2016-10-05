@@ -23,6 +23,11 @@ class PultusORMQuery(connection: Connection) {
         DELETE
     }
 
+    enum class Sort {
+        ASCENDING,
+        DESCENDING
+    }
+
     private var statement: Statement by Delegates.notNull<Statement>()
 
     init {
@@ -287,7 +292,11 @@ class PultusORMQuery(connection: Connection) {
         }
 
         fun select(value: Any, condition: PultusORMCondition): String {
-            return "SELECT * FROM ${value.javaClass.simpleName} WHERE ${condition.rawQuery().toString()};"
+            if (condition.rawQuery().trim().isNotEmpty()) {
+                if (condition.rawQuery().trim().toLowerCase().startsWith("order"))
+                    return "SELECT * FROM ${value.javaClass.simpleName} ${condition.rawQuery().toString()};"
+                else return "SELECT * FROM ${value.javaClass.simpleName} WHERE ${condition.rawQuery().toString()};"
+            } else return select(value)
         }
 
         fun select(value: Any): String {

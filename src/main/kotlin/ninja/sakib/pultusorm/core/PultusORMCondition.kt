@@ -76,6 +76,21 @@ class PultusORMCondition {
         query.append("$key <= $value")
     }
 
+    fun sort(columnName: String, order: PultusORMQuery.Sort) {
+        when (order) {
+            PultusORMQuery.Sort.ASCENDING -> {
+                addSeparator()
+
+                query.append("ORDER BY $columnName ASC")
+            }
+            PultusORMQuery.Sort.DESCENDING -> {
+                addSeparator()
+
+                query.append("ORDER BY $columnName DESC")
+            }
+        }
+    }
+
     fun rawQuery(): String {
         return query.toString()
     }

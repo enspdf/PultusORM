@@ -29,11 +29,11 @@ class Test : Callback {
 fun main(args: Array<String>) {
     val pultusORM: PultusORM = PultusORM("test", "/Users/s4kib/")
 
-//    val user: User = User()
-////    user.userId = Math.abs(UUID.randomUUID().mostSignificantBits.toInt())
-//    user.name = "Sakib"
-//    user.age = 25
-//    pultusORM.save(user, ninja.sakib.pultusorm.Test())
+    val user: User = User()
+//    user.userId = Math.abs(UUID.randomUUID().mostSignificantBits.toInt())
+    user.name = "Sakib"
+    user.age = 25
+    pultusORM.save(user, ninja.sakib.pultusorm.Test())
 
 //    val condition: PultusORMCondition = PultusORMCondition()
 //    condition.eq("userId", 802505126)
@@ -46,17 +46,18 @@ fun main(args: Array<String>) {
 //
 //    pultusORM.update(User(), updater)
 
-//    val result: MutableList<Any> = pultusORM.get(User(), condition)
-//    for (it in result) {
-//        val user: User = it as User
-//        println("${user.userId}")
-//        println("${user.name}")
-//        println("${user.age}")
-//        println()
-//    }
 
     val condition: PultusORMCondition = PultusORMCondition()
-    condition.eq("userId", 12)
+    condition.sort("userId", PultusORMQuery.Sort.DESCENDING)
 
-    pultusORM.delete(User(), condition, Test())
+    val result: MutableList<Any> = pultusORM.get(User(), condition)
+    for (it in result) {
+        val user: User = it as User
+        println("ID : ${user.userId}")
+        println("Name : ${user.name}")
+//        println("${user.age}")
+        println()
+    }
+
+//    pultusORM.delete(User(), condition, Test())
 }
