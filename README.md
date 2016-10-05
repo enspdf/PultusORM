@@ -2,7 +2,7 @@
 PultusORM is a sqlite ORM library for kotlin on top of sqlite jdbc driver.
 
 Dev status : Active<br>
-Version : beta-0.0.1
+Current Version : beta-0.0.1
 
 ##
 Features Implemented,
@@ -113,7 +113,7 @@ for (it in result) {
 }
 ```
 
-##### Update value
+##### Update clazz
 ```
 // values will be updated based on this condition
 val condition: PultusORMCondition = PultusORMCondition()

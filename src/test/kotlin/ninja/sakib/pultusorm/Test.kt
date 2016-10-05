@@ -46,7 +46,6 @@ fun main(args: Array<String>) {
 //
 //    pultusORM.update(User(), updater)
 
-
     val condition: PultusORMCondition = PultusORMCondition()
     condition.sort("userId", PultusORMQuery.Sort.DESCENDING)
 

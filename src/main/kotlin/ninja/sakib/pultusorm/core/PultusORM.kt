@@ -41,51 +41,51 @@ class PultusORM {
         connection = DriverManager.getConnection("jdbc:sqlite:$databasePath/$databaseName")
     }
 
-    fun save(value: Any) {
-        if (isValidObject(value)) {
-            PultusORMQuery(connection!!).save(value)
-        } else {
-            throwback("${value.javaClass.simpleName} must extend model class")
-        }
+    fun save(clazz: Any) {
+        PultusORMQuery(connection!!).save(clazz)
     }
 
-    fun save(value: Any, callback: Callback) {
-        if (isValidObject(value)) {
-            PultusORMQuery(connection!!).save(value, callback)
-        } else {
-            throwback("${value.javaClass.simpleName} must extend model class")
-        }
+    fun save(clazz: Any, callback: Callback) {
+        PultusORMQuery(connection!!).save(clazz, callback)
     }
 
-    fun update(value: Any, updater: PultusORMUpdater) {
-        PultusORMQuery(connection!!).update(value, updater)
+    fun update(clazz: Any, updater: PultusORMUpdater) {
+        PultusORMQuery(connection!!).update(clazz, updater)
     }
 
-    fun update(value: Any, callback: Callback) {
-
+    fun update(clazz: Any, updater: PultusORMUpdater, callback: Callback) {
+        PultusORMQuery(connection!!).update(clazz, updater, callback)
     }
 
-    fun get(value: Any): MutableList<Any> {
-        return PultusORMQuery(connection!!).get(value)
+    fun get(clazz: Any): MutableList<Any> {
+        return PultusORMQuery(connection!!).get(clazz)
     }
 
-    fun get(value: Any, condition: PultusORMCondition): MutableList<Any> {
-        return PultusORMQuery(connection!!).get(value, condition)
+    fun get(clazz: Any, condition: PultusORMCondition): MutableList<Any> {
+        return PultusORMQuery(connection!!).get(clazz, condition)
     }
 
-    fun delete(value: Any) {
-        PultusORMQuery(connection!!).delete(value)
+    fun delete(clazz: Any) {
+        PultusORMQuery(connection!!).delete(clazz)
     }
 
-    fun delete(value: Any, condition: PultusORMCondition) {
-        PultusORMQuery(connection!!).delete(value, condition)
+    fun delete(clazz: Any, condition: PultusORMCondition) {
+        PultusORMQuery(connection!!).delete(clazz, condition)
     }
 
-    fun delete(value: Any, callback: Callback) {
-        PultusORMQuery(connection!!).delete(value, callback)
+    fun delete(clazz: Any, callback: Callback) {
+        PultusORMQuery(connection!!).delete(clazz, callback)
     }
 
-    fun delete(value: Any, condition: PultusORMCondition, callback: Callback) {
-        PultusORMQuery(connection!!).delete(value, condition, callback)
+    fun delete(clazz: Any, condition: PultusORMCondition, callback: Callback) {
+        PultusORMQuery(connection!!).delete(clazz, condition, callback)
+    }
+
+    fun drop(clazz: Any) {
+        PultusORMQuery(connection!!).drop(clazz)
+    }
+
+    fun drop(clazz: Any, callback: Callback) {
+        PultusORMQuery(connection!!).drop(clazz, callback)
     }
 }
