@@ -101,6 +101,7 @@ val condition: PultusORMCondition = PultusORMCondition()
 condition.eq("userId", 802505126)
 condition.and()     // Concating two condition with and
 condition.eq("age", 24)
+condition.sort("age", PultusORMQuery.Sort.DESCENDING)
 
 val result: MutableList<Any> = pultusORM.get(User(), condition)
 for (it in result) {
