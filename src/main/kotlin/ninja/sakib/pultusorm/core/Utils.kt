@@ -19,7 +19,7 @@ import java.lang.reflect.Type
  * := Coffee : Dream : Code
  */
 
-var isDebugEnabled = false
+var isDebugEnabled = true
 val objectToJsonConverter: Gson = GsonBuilder().create()
 
 fun log(key: String, value: String) {
@@ -31,30 +31,19 @@ fun getUserHomeDirectory(): String {
     return System.getProperty("user.home")
 }
 
-fun isValidObject(value: Any): Boolean {
-    return true
-}
-
 fun throwback(msg: String) {
     throw PultusORMException(msg)
 }
 
 fun typeToSQL(value: Type): String {
-    if (value == Int::class.java)
+    if (value == Int::class.java || value == Boolean::class.java)
         return "INTEGER"
-    else if (value == String::class.java)
+    else if (value == Long::class.java)
+        return "BIGINT"
+    else if (value == Double::class.java || value == Float::class.java)
+        return "DOUBLE"
+    else
         return "TEXT"
-    else if (value == Char::class.java)
-        return "varchar"
-    else if (value == Double::class.java)
-        return ""
-    else if (value == Float::class.java)
-        return ""
-    else return ""
-}
-
-fun booleanToSQL(value: Type): Int {
-    return 0
 }
 
 fun isBoolean(value: Type): Boolean {
@@ -93,10 +82,6 @@ fun isPrimaryKeyEnabled(value: Field): String {
     if (value.getDeclaredAnnotation(PrimaryKey::class.java) != null)
         return "PRIMARY KEY"
     return ""
-}
-
-fun processAutoIncrement() {
-
 }
 
 fun isAutoIncrement(value: Field): Boolean {
