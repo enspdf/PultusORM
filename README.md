@@ -1,7 +1,7 @@
 ## PultusORM
-PultusORM is a sqlite ORM implementation for kotlin on top of sqlite jdbc driver.
+PultusORM is a sqlite ORM library for kotlin on top of sqlite jdbc driver.
 
-Status : Active Development<br>
+Dev status : Active<br>
 Version : beta-0.0.1
 
 ##
@@ -11,6 +11,25 @@ Features Implemented,
 * Update
 * Delete
 
+
+### Usages
+##### Gradle
+In your buid.gradle file add
+
+```
+allprojects {
+    repositories {
+        ...
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+And
+```
+dependencies {
+    compile 'com.github.s4kibs4mi:PultusORM:beta-0.0.1'
+}
+```
 
 ### Examples
 
