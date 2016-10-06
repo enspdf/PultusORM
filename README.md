@@ -49,7 +49,9 @@ And
 </dependency>
 ```
 
-[More...](https://jitpack.io/#s4kibs4mi/PultusORM/beta-0.0.2)
+In case you need jar [download](https://jitpack.io/com/github/s4kibs4mi/PultusORM/beta-0.0.2/PultusORM-beta-0.0.2.jar).
+
+[More option...](https://jitpack.io/#s4kibs4mi/PultusORM/beta-0.0.2)
 
 ### Examples
 
