@@ -156,3 +156,8 @@ as that will be handled by sqlite.
 ### License
 Copyright &copy; Sakib Sami<br>
 Distributed under [MIT](https://github.com/s4kibs4mi/PultusORM/blob/master/LICENSE) license
+
+
+### Naming
+You may wanted to know about **Pultus**.<br>
+Well that's my GF's name I love to call ;)
