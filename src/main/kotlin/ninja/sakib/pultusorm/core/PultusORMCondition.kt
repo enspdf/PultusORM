@@ -100,10 +100,11 @@ class PultusORMCondition {
 
     fun rawQuery(): String {
         val query: StringBuilder = StringBuilder()
-        query.append(conditionQuery)
+        query.append(conditionQuery.toString())
         if (query.isNotEmpty())
             query.append(" ")
-        query.append(sortQuery)
+        query.append(sortQuery.toString())
+
         return query.toString()
     }
 

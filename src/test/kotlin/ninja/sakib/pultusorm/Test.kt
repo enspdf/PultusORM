@@ -37,8 +37,11 @@ fun main(args: Array<String>) {
 
     val condition: PultusORMCondition = PultusORMCondition()
     condition.sort("studentId", PultusORMQuery.Sort.DESCENDING)
+    condition.eq("studentId", 2)
+    condition.or()
+    condition.eq("studentId", 4)
 
-    val students: MutableList<Any> = pultusORM.get(Student())
+    val students: MutableList<Any> = pultusORM.get(Student(), condition)
     for (it in students) {
         val std = it as Student
         println("${std.studentId}")

@@ -328,7 +328,6 @@ class PultusORMQuery(connection: Connection) {
                 query.append(" WHERE ${updateQuery.condition()!!.rawQuery()}")
             query.append(";")
 
-            println(query.toString())
             return query.toString()
         }
 
