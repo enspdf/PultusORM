@@ -8,72 +8,79 @@ package ninja.sakib.pultusorm.core
  */
 
 class PultusORMCondition {
-    private var query: StringBuilder = StringBuilder()
+    private var conditionQuery: StringBuilder = StringBuilder()
+    private var sortQuery: StringBuilder = StringBuilder()
 
     fun eq(key: String, value: Any) {
         addSeparator()
 
         if (value is String)
-            query.append("$key = '$value'")
-        else query.append("$key = $value")
+            conditionQuery.append("$key = '$value'")
+        else conditionQuery.append("$key = $value")
     }
 
     fun notEq(key: String, value: Any) {
         addSeparator()
 
         if (value is String)
-            query.append("$key != '$value'")
-        else query.append("$key != $value")
+            conditionQuery.append("$key != '$value'")
+        else conditionQuery.append("$key != $value")
     }
 
     fun between(begin: Int, end: Int) {
         addSeparator()
-        query.append("$begin AND $end")
+        conditionQuery.append("BETWEEN $begin AND $end")
     }
 
     fun In(begin: Int, end: Int) {
         addSeparator()
-        query.append("IN($begin,$end)")
+        conditionQuery.append("IN($begin,$end)")
     }
 
     fun notIn(begin: Int, end: Int) {
         addSeparator()
-        query.append("NOT IN($begin,$end)")
+        conditionQuery.append("NOT IN($begin,$end)")
     }
 
     fun and() {
         addSeparator()
-        query.append("AND")
+        conditionQuery.append("AND")
+    }
+
+    fun or() {
+        addSeparator()
+
+        conditionQuery.append("OR")
     }
 
     fun or(condition: PultusORMCondition) {
         addSeparator()
 
-        query.append("OR (${condition.query.toString()})")
+        conditionQuery.append("OR (${condition.conditionQuery.toString()})")
     }
 
     fun greater(key: String, value: Int) {
         addSeparator()
 
-        query.append("$key > $value")
+        conditionQuery.append("$key > $value")
     }
 
     fun less(key: String, value: Int) {
         addSeparator()
 
-        query.append("$key < $value")
+        conditionQuery.append("$key < $value")
     }
 
     fun greaterEq(key: String, value: Int) {
         addSeparator()
 
-        query.append("$key >= $value")
+        conditionQuery.append("$key >= $value")
     }
 
     fun lessEq(key: String, value: Int) {
         addSeparator()
 
-        query.append("$key <= $value")
+        conditionQuery.append("$key <= $value")
     }
 
     fun sort(columnName: String, order: PultusORMQuery.Sort) {
@@ -81,27 +88,27 @@ class PultusORMCondition {
             PultusORMQuery.Sort.ASCENDING -> {
                 addSeparator()
 
-                query.append("ORDER BY $columnName ASC")
+                sortQuery.append("ORDER BY $columnName ASC")
             }
             PultusORMQuery.Sort.DESCENDING -> {
                 addSeparator()
 
-                query.append("ORDER BY $columnName DESC")
+                sortQuery.append("ORDER BY $columnName DESC")
             }
         }
     }
 
     fun rawQuery(): String {
+        val query: StringBuilder = StringBuilder()
+        query.append(conditionQuery)
+        if (query.isNotEmpty())
+            query.append(" ")
+        query.append(sortQuery)
         return query.toString()
     }
 
-    fun rawQuery(rawQuery: String) {
-        query = StringBuilder()
-        query.append(rawQuery)
-    }
-
     private fun addSeparator() {
-        if (query.isNotEmpty())
-            query.append(" ")
+        if (conditionQuery.isNotEmpty())
+            conditionQuery.append(" ")
     }
 }

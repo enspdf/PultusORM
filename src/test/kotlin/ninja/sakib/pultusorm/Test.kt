@@ -1,12 +1,9 @@
 package ninja.sakib.pultusorm
 
 import ninja.sakib.pultusorm.callbacks.Callback
-import ninja.sakib.pultusorm.core.PultusORM
-import ninja.sakib.pultusorm.core.PultusORMCondition
-import ninja.sakib.pultusorm.core.PultusORMQuery
-import ninja.sakib.pultusorm.core.log
+import ninja.sakib.pultusorm.core.*
 import ninja.sakib.pultusorm.exceptions.PultusORMException
-import ninja.sakib.pultusorm.models.User
+import ninja.sakib.pultusorm.models.Student
 
 /**
  * := Coded with love by Sakib Sami on 9/27/16.
@@ -15,48 +12,38 @@ import ninja.sakib.pultusorm.models.User
  * := Coffee : Dream : Code
  */
 
-class Test : Callback {
+class ResponseCallback : Callback {
     override fun onSuccess(type: PultusORMQuery.Type) {
-        log(this.javaClass.simpleName, "${type.name} Succeed")
+        log("${type.name}", "Success")
     }
 
     override fun onFailure(type: PultusORMQuery.Type, exception: PultusORMException) {
-        log(this.javaClass.simpleName, "${type.name} Failed <${exception.message}>")
+        log("${type.name}", "Failure")
         exception.printStackTrace()
     }
 }
 
 fun main(args: Array<String>) {
-    val pultusORM: PultusORM = PultusORM("test", "/Users/s4kib/")
+    enableDebugMode(true)
 
-    val user: User = User()
-//    user.userId = Math.abs(UUID.randomUUID().mostSignificantBits.toInt())
-    user.name = "Sakib"
-    user.age = 25
-    pultusORM.save(user, ninja.sakib.pultusorm.Test())
+    val pultusORM: PultusORM = PultusORM("univ.db")
 
-//    val condition: PultusORMCondition = PultusORMCondition()
-//    condition.eq("userId", 802505126)
-//    condition.and()
-//    condition.eq("age", 24)
+    val student: Student = Student()
+    student.name = "Sakib Sami"
+    student.department = "CSE"
+    student.cgpa = 2.5
 
-//    val updater: PultusORMUpdater = PultusORMUpdater()
-//    updater.set("name", "Sami")
-//    updater.condition(condition)
-//
-//    pultusORM.update(User(), updater)
+//    pultusORM.save(student, ResponseCallback())
 
     val condition: PultusORMCondition = PultusORMCondition()
-    condition.sort("userId", PultusORMQuery.Sort.DESCENDING)
+    condition.sort("studentId", PultusORMQuery.Sort.DESCENDING)
 
-    val result: MutableList<Any> = pultusORM.get(User(), condition)
-    for (it in result) {
-        val user: User = it as User
-        println("ID : ${user.userId}")
-        println("Name : ${user.name}")
-//        println("${user.age}")
-        println()
+    val students: MutableList<Any> = pultusORM.get(Student())
+    for (it in students) {
+        val std = it as Student
+        println("${std.studentId}")
+        println("${std.name}")
+        println("${std.department}")
+        println("${std.cgpa}")
     }
-
-//    pultusORM.delete(User(), condition, Test())
 }

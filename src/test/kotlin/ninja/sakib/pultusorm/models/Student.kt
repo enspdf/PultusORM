@@ -1,21 +1,20 @@
 package ninja.sakib.pultusorm.models
 
 import ninja.sakib.pultusorm.annotations.AutoIncrement
-import ninja.sakib.pultusorm.annotations.NotNull
 import ninja.sakib.pultusorm.annotations.PrimaryKey
 
 /**
- * := Coded with love by Sakib Sami on 9/27/16.
+ * := Coded with love by Sakib Sami on 10/6/16.
  * := s4kibs4mi@gmail.com
  * := www.sakib.ninja
  * := Coffee : Dream : Code
  */
 
-class User() {
+class Student {
     @PrimaryKey
     @AutoIncrement
-    var userId: Int = 0
-    @NotNull
+    var studentId: Int = 0
     var name: String? = null
-    var age: Int = 0
+    var department: String? = null
+    var cgpa: Double = 0.0
 }
