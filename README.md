@@ -2,7 +2,7 @@
 PultusORM is a sqlite ORM library for kotlin on top of sqlite jdbc driver.
 
 Dev status : Active<br>
-Current Version : beta-0.0.2
+Current Version : beta-0.0.3
 
 ##
 Features Implemented,
@@ -27,7 +27,7 @@ allprojects {
 And
 ```
 dependencies {
-    compile 'com.github.s4kibs4mi:PultusORM:beta-0.0.2'
+    compile 'com.github.s4kibs4mi:PultusORM:beta-0.0.3'
 }
 ```
 
@@ -45,13 +45,13 @@ And
 <dependency>
     <groupId>com.github.s4kibs4mi</groupId>
     <artifactId>PultusORM</artifactId>
-    <version>beta-0.0.2</version>
+    <version>beta-0.0.3</version>
 </dependency>
 ```
 
-In case you need jar [download](https://jitpack.io/com/github/s4kibs4mi/PultusORM/beta-0.0.2/PultusORM-beta-0.0.2.jar).
+In case you need jar [download](https://jitpack.io/com/github/s4kibs4mi/PultusORM/beta-0.0.3/PultusORM-beta-0.0.3.jar).
 
-[More option...](https://jitpack.io/#s4kibs4mi/PultusORM/beta-0.0.2)
+[More option...](https://jitpack.io/#s4kibs4mi/PultusORM/beta-0.0.3)
 
 ### Examples
 
@@ -106,7 +106,7 @@ val condition: PultusORMCondition = PultusORMCondition()
 condition.eq("userId", 802505126)
 condition.and()     // Concating two condition with and
 condition.eq("age", 24)
-condition.sort("age", PultusORMQuery.Sort.DESCENDING)   // this must be at the last of condition
+condition.sort("age", PultusORMQuery.Sort.DESCENDING)
 
 val result: MutableList<Any> = pultusORM.get(User(), condition)
 for (it in result) {
