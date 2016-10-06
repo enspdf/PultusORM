@@ -110,6 +110,10 @@ fun isUniqueEnabled(value: Field): String {
     return ""
 }
 
+fun isEqual(x: String, y: String): Boolean {
+    return x == y || x.equals(y)
+}
+
 fun parseClassName(value: Any): String {
     var className = value.toString()
     if (className.indexOf('.') != -1) {

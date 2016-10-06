@@ -88,4 +88,8 @@ class PultusORM {
     fun drop(clazz: Any, callback: Callback) {
         PultusORMQuery(connection!!).drop(clazz, callback)
     }
+
+    fun count(clazz: Any): Long {
+        return PultusORMQuery(connection!!).count(clazz)
+    }
 }

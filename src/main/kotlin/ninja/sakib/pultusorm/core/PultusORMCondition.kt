@@ -10,6 +10,7 @@ package ninja.sakib.pultusorm.core
 class PultusORMCondition {
     private var conditionQuery: StringBuilder = StringBuilder()
     private var sortQuery: StringBuilder = StringBuilder()
+    private var groupQuery: StringBuilder = StringBuilder()
 
     fun eq(key: String, value: Any) {
         addSeparator()
@@ -98,12 +99,26 @@ class PultusORMCondition {
         }
     }
 
+    fun group(columnName: String) {
+        if (groupQuery.isNotEmpty())
+            groupQuery.append(",")
+        groupQuery.append("$columnName")
+    }
+
     fun rawQuery(): String {
         val query: StringBuilder = StringBuilder()
-        query.append(conditionQuery.toString())
+        if (conditionQuery.isNotEmpty())
+            query.append("WHERE ${conditionQuery.toString()}")
+
         if (query.isNotEmpty())
             query.append(" ")
-        query.append(sortQuery.toString())
+
+        if (groupQuery.isNotEmpty())
+            query.append("GROUP BY ${groupQuery.toString()}")
+
+        if (query.isNotEmpty())
+            query.append(" ")
+        query.append("${sortQuery.toString()}")
 
         return query.toString()
     }

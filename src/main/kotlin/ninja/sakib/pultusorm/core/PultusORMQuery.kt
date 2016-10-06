@@ -61,8 +61,7 @@ class PultusORMQuery(connection: Connection) {
     }
 
     fun get(clazz: Any, condition: PultusORMCondition): MutableList<Any> {
-        if (isTableExists(clazz.javaClass.simpleName).not())
-            createTable(clazz)
+        createTable(clazz)
 
         val resultList: MutableList<Any> = mutableListOf()
         val query = Builder().select(clazz, condition)
@@ -103,8 +102,7 @@ class PultusORMQuery(connection: Connection) {
     }
 
     fun get(clazz: Any): MutableList<Any> {
-        if (isTableExists(clazz.javaClass.simpleName).not())
-            createTable(clazz)
+        createTable(clazz)
 
         val result: ResultSet = statement.executeQuery(Builder().select(clazz))
         val resultList: MutableList<Any> = mutableListOf()
@@ -140,8 +138,7 @@ class PultusORMQuery(connection: Connection) {
     }
 
     fun update(clazz: Any, updateQuery: PultusORMUpdater) {
-        if (isTableExists(clazz.javaClass.simpleName).not())
-            createTable(clazz)
+        createTable(clazz)
 
         try {
             statement.execute(Builder().update(clazz, updateQuery))
@@ -152,8 +149,7 @@ class PultusORMQuery(connection: Connection) {
 
     fun update(clazz: Any, updateQuery: PultusORMUpdater, callback: Callback) {
         kotlin.run {
-            if (isTableExists(clazz.javaClass.simpleName).not())
-                createTable(clazz)
+            createTable(clazz)
 
             try {
                 statement.execute(Builder().update(clazz, updateQuery))
@@ -166,6 +162,8 @@ class PultusORMQuery(connection: Connection) {
     }
 
     fun delete(clazz: Any) {
+        createTable(clazz)
+
         try {
             statement.execute(Builder().delete(clazz))
             log(this.javaClass.simpleName, "Table ${parseClassName(clazz)} dropped - Succeed")
@@ -175,6 +173,8 @@ class PultusORMQuery(connection: Connection) {
     }
 
     fun delete(clazz: Any, condition: PultusORMCondition) {
+        createTable(clazz)
+
         try {
             statement.execute(Builder().delete(clazz, condition))
             log(this.javaClass.simpleName, "Table ${parseClassName(clazz)} dropped - Succeed")
@@ -184,6 +184,8 @@ class PultusORMQuery(connection: Connection) {
     }
 
     fun delete(clazz: Any, callback: Callback) {
+        createTable(clazz)
+
         kotlin.run {
             try {
                 statement.execute(Builder().delete(clazz))
@@ -196,6 +198,8 @@ class PultusORMQuery(connection: Connection) {
     }
 
     fun delete(clazz: Any, condition: PultusORMCondition, callback: Callback) {
+        createTable(clazz)
+
         kotlin.run {
             try {
                 statement.execute(Builder().delete(clazz, condition))
@@ -209,7 +213,8 @@ class PultusORMQuery(connection: Connection) {
 
     fun drop(clazz: Any) {
         try {
-            statement.execute(Builder().drop(clazz))
+            if (isTableExists(clazz.javaClass.simpleName))
+                statement.execute(Builder().drop(clazz))
         } catch (exception: Exception) {
             throwback("Malformed update query.")
         }
@@ -218,13 +223,34 @@ class PultusORMQuery(connection: Connection) {
     fun drop(clazz: Any, callback: Callback) {
         kotlin.run {
             try {
-                statement.execute(Builder().drop(clazz))
-                callback.onSuccess(Type.DROP)
+                if (isTableExists(clazz.javaClass.simpleName)) {
+                    statement.execute(Builder().drop(clazz))
+                    callback.onSuccess(Type.DROP)
+                } else {
+                    val ormException: PultusORMException = PultusORMException("Table ${clazz.javaClass.simpleName} not found.")
+                    callback.onFailure(Type.DROP, ormException)
+                }
             } catch (exception: Exception) {
                 val ormException: PultusORMException = PultusORMException(exception.message!!)
                 callback.onFailure(Type.DROP, ormException)
             }
         }
+    }
+
+    fun count(clazz: Any): Long {
+        createTable(clazz)
+
+        var counter: Long = 0
+        val query = Builder().select(clazz)
+        try {
+            val result: ResultSet = statement.executeQuery(query)
+            while (result.next()) {
+                counter++
+            }
+        } catch (exception: Exception) {
+            throwback("Malformed query <${query.toString()}>.")
+        }
+        return counter
     }
 
     private fun isTableExists(tableName: String): Boolean {
@@ -310,9 +336,7 @@ class PultusORMQuery(connection: Connection) {
 
         fun select(clazz: Any, condition: PultusORMCondition): String {
             if (condition.rawQuery().trim().isNotEmpty()) {
-                if (condition.rawQuery().trim().toLowerCase().startsWith("order"))
-                    return "SELECT * FROM ${clazz.javaClass.simpleName} ${condition.rawQuery().toString()};"
-                else return "SELECT * FROM ${clazz.javaClass.simpleName} WHERE ${condition.rawQuery().toString()};"
+                return "SELECT * FROM ${clazz.javaClass.simpleName} ${condition.rawQuery().toString()};"
             } else return select(clazz)
         }
 
@@ -325,7 +349,7 @@ class PultusORMQuery(connection: Connection) {
             query.append("UPDATE ${clazz.javaClass.simpleName} SET ")
             query.append("${updateQuery.updateQuery()}")
             if (updateQuery.condition() != null)
-                query.append(" WHERE ${updateQuery.condition()!!.rawQuery()}")
+                query.append(" ${updateQuery.condition()!!.rawQuery()}")
             query.append(";")
 
             return query.toString()
@@ -336,7 +360,7 @@ class PultusORMQuery(connection: Connection) {
         }
 
         fun delete(clazz: Any, condition: PultusORMCondition): String {
-            return "DELETE FROM ${clazz.javaClass.simpleName} WHERE ${condition.rawQuery()};"
+            return "DELETE FROM ${clazz.javaClass.simpleName} ${condition.rawQuery()};"
         }
 
         fun drop(clazz: Any): String {
