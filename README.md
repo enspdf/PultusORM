@@ -159,5 +159,5 @@ Distributed under [MIT](https://github.com/s4kibs4mi/PultusORM/blob/master/LICEN
 
 
 ### Naming
-You may wanted to know about **Pultus**.<br>
+You may want to know about **Pultus**.<br>
 Well that's my GF's name I love to call ;)
