@@ -153,4 +153,4 @@ as that will be handled by sqlite.
 
 ### License
 Copyright &copy; Sakib Sami<br>
-Distributed under [Apache 2](https://github.com/s4kibs4mi/PultusORM/blob/master/LICENSE) license
+Distributed under [MIT](https://github.com/s4kibs4mi/PultusORM/blob/master/LICENSE) license
