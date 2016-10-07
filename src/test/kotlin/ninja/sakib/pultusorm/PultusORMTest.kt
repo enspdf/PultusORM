@@ -2,6 +2,7 @@ package ninja.sakib.pultusorm
 
 import ninja.sakib.pultusorm.callbacks.Callback
 import ninja.sakib.pultusorm.core.PultusORM
+import ninja.sakib.pultusorm.core.PultusORMCondition
 import ninja.sakib.pultusorm.core.PultusORMQuery
 import ninja.sakib.pultusorm.exceptions.PultusORMException
 import ninja.sakib.pultusorm.models.Student
@@ -45,6 +46,17 @@ class PultusORMTest : Callback {
         pultusORM.save(student, this)
     }
 
+    @Test
+    fun findAll() {
+        pultusORM.get(Student())
+    }
+
+    @Test
+    fun findWithCondition() {
+        val condition: PultusORMCondition = PultusORMCondition()
+        condition.eq("name", "Sayem")
+        pultusORM.get(Student(), condition)
+    }
 
     override fun onSuccess(type: PultusORMQuery.Type) {
 
