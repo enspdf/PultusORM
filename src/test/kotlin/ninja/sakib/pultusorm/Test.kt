@@ -37,7 +37,7 @@ fun main(args: Array<String>) {
 //    pultusORM.save(student, ResponseCallback())
 
     val condition: PultusORMCondition = PultusORMCondition()
-    condition.sort("studentId", PultusORMQuery.Sort.DESCENDING)
+    condition.sort("department", PultusORMQuery.Sort.DESCENDING)
 //    condition.group("department")
 //    condition.group("name")
 
