@@ -27,7 +27,7 @@ fun main(args: Array<String>) {
     enableDebugMode(true)
 
     val pultusORM: PultusORM = PultusORM("univ.db")
-    println(pultusORM.count(Student()))
+//    println(pultusORM.count(Student()))
 
 //    val student: Student = Student()
 //    student.name = "Sakib Sami"
@@ -37,16 +37,20 @@ fun main(args: Array<String>) {
 //    pultusORM.save(student, ResponseCallback())
 
     val condition: PultusORMCondition = PultusORMCondition()
-    condition.sort("department", PultusORMQuery.Sort.DESCENDING)
+    condition.eq("studentId", 3)
+
+    pultusORM.delete(Student(), condition, ResponseCallback())
+
+//    condition.sort("department", PultusORMQuery.Sort.DESCENDING)
 //    condition.group("department")
 //    condition.group("name")
 
-    val students: MutableList<Any> = pultusORM.get(Student(), condition)
-    for (it in students) {
-        val std = it as Student
-        println("${std.studentId}")
-        println("${std.name}")
-        println("${std.department}")
-        println("${std.cgpa}")
-    }
+//    val students: MutableList<Any> = pultusORM.get(Student(), condition)
+//    for (it in students) {
+//        val std = it as Student
+//        println("${std.studentId}")
+//        println("${std.name}")
+//        println("${std.department}")
+//        println("${std.cgpa}")
+//    }
 }

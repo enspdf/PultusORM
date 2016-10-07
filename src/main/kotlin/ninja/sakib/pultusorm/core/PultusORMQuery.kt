@@ -177,9 +177,9 @@ class PultusORMQuery(connection: Connection) {
 
         try {
             statement.execute(Builder().delete(clazz, condition))
-            log(this.javaClass.simpleName, "Table ${parseClassName(clazz)} dropped - Succeed")
+            log(this.javaClass.simpleName, "Table ${clazz.javaClass.simpleName} delete - Succeed")
         } catch (exception: Exception) {
-            log(this.javaClass.simpleName, "Table ${parseClassName(clazz)} dropped - Failed <${exception.message}>")
+            log(this.javaClass.simpleName, "Table ${clazz.javaClass.simpleName} delete - Failed <${exception.message}>")
         }
     }
 
@@ -216,7 +216,7 @@ class PultusORMQuery(connection: Connection) {
             if (isTableExists(clazz.javaClass.simpleName))
                 statement.execute(Builder().drop(clazz))
         } catch (exception: Exception) {
-            throwback("Malformed update query.")
+            throwback("Malformed drop query.")
         }
     }
 

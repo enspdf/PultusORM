@@ -1,8 +1,8 @@
 ## PultusORM
 PultusORM is a sqlite ORM library for kotlin on top of sqlite jdbc driver.
 
-Dev status : Active<br>
-Current Version : beta-0.0.3
+status : active<br>
+version : beta-0.0.3
 
 ##
 Features Implemented,
@@ -136,6 +136,8 @@ pultusORM.update(User(), updater)
 val pultusORM: PultusORM = PultusORM("test.db", "/Users/s4kib/")
 pultusORM.delete(User())
 ```
+
+**Check [Wiki](https://github.com/s4kibs4mi/PultusORM/wiki) for more examples & API docs**
 
 #
 #####Note :
