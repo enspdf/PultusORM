@@ -54,7 +54,7 @@ class PultusORMTest : Callback {
 
     @Test
     fun findWithCondition() {
-        val condition: PultusORMCondition = PultusORMCondition()
+        val condition: PultusORMCondition = PultusORMCondition.Builder()
                 .eq("name", "sakib")
                 .and()
                 .greaterEq("cgpa", 18)
@@ -62,6 +62,9 @@ class PultusORMTest : Callback {
                 .startsWith("name", "sami")
                 .sort("name", PultusORMQuery.Sort.DESCENDING)
                 .sort("department", PultusORMQuery.Sort.ASCENDING)
+                .build()
+
+        println(condition.rawQuery())
 
         val students = pultusORM.find(Student(), condition)
         for (it in students) {

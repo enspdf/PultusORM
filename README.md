@@ -102,13 +102,14 @@ Sakib<br>
 
 ##### Retrieve Value based on condition
 ```
-val condition: PultusORMCondition = PultusORMCondition()
+val condition: PultusORMCondition = PultusORMCondition.Builder()
         .eq("userId", 802505126)
         .and()     // Concating two condition with and
         .eq("age", 24)
         .or()
         .startsWith("name", "sami")
         .sort("age", PultusORMQuery.Sort.DESCENDING)
+        .build()
 
 val result: MutableList<Any> = pultusORM.get(User(), condition)
 for (it in result) {
@@ -123,8 +124,9 @@ for (it in result) {
 ##### Update Value
 ```
 // values will be updated based on this condition
-val condition: PultusORMCondition = PultusORMCondition()
+val condition: PultusORMCondition = PultusORMCondition.Builder()
         .eq("userId", 802505126)
+        .build()
 
 val updater: PultusORMUpdater = PultusORMUpdater()
 updater.set("name", "Sami")
