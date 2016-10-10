@@ -2,7 +2,7 @@
 PultusORM is a sqlite ORM library for kotlin on top of sqlite jdbc driver.
 
 status : active<br>
-version : beta-0.0.3
+version : beta-0.0.4
 
 ##
 Features Implemented,
@@ -27,7 +27,7 @@ allprojects {
 And
 ```
 dependencies {
-    compile 'com.github.s4kibs4mi:PultusORM:beta-0.0.3'
+    compile 'com.github.s4kibs4mi:PultusORM:beta-0.0.4'
 }
 ```
 
@@ -45,13 +45,13 @@ And
 <dependency>
     <groupId>com.github.s4kibs4mi</groupId>
     <artifactId>PultusORM</artifactId>
-    <version>beta-0.0.3</version>
+    <version>beta-0.0.4</version>
 </dependency>
 ```
 
-In case you need jar [download](https://jitpack.io/com/github/s4kibs4mi/PultusORM/beta-0.0.3/PultusORM-beta-0.0.3.jar).
+In case you need jar [download](https://jitpack.io/com/github/s4kibs4mi/PultusORM/beta-0.0.4/PultusORM-beta-0.0.4.jar).
 
-[More option...](https://jitpack.io/#s4kibs4mi/PultusORM/beta-0.0.3)
+[More option...](https://jitpack.io/#s4kibs4mi/PultusORM/beta-0.0.4)
 
 ### Examples
 
@@ -103,10 +103,12 @@ Sakib<br>
 ##### Retrieve Value based on condition
 ```
 val condition: PultusORMCondition = PultusORMCondition()
-condition.eq("userId", 802505126)
-condition.and()     // Concating two condition with and
-condition.eq("age", 24)
-condition.sort("age", PultusORMQuery.Sort.DESCENDING)
+        .eq("userId", 802505126)
+        .and()     // Concating two condition with and
+        .eq("age", 24)
+        .or()
+        .startsWith("name", "sami")
+        .sort("age", PultusORMQuery.Sort.DESCENDING)
 
 val result: MutableList<Any> = pultusORM.get(User(), condition)
 for (it in result) {
@@ -122,7 +124,7 @@ for (it in result) {
 ```
 // values will be updated based on this condition
 val condition: PultusORMCondition = PultusORMCondition()
-condition.eq("userId", 802505126)
+        .eq("userId", 802505126)
 
 val updater: PultusORMUpdater = PultusORMUpdater()
 updater.set("name", "Sami")

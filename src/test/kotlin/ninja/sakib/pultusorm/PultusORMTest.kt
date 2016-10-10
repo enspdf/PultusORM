@@ -4,6 +4,7 @@ import ninja.sakib.pultusorm.callbacks.Callback
 import ninja.sakib.pultusorm.core.PultusORM
 import ninja.sakib.pultusorm.core.PultusORMCondition
 import ninja.sakib.pultusorm.core.PultusORMQuery
+import ninja.sakib.pultusorm.core.enableDebugMode
 import ninja.sakib.pultusorm.exceptions.PultusORMException
 import ninja.sakib.pultusorm.models.Student
 import org.junit.After
@@ -23,7 +24,7 @@ class PultusORMTest : Callback {
 
     @Before
     fun setUp() {
-
+        enableDebugMode(true)
     }
 
     @Test
@@ -48,14 +49,26 @@ class PultusORMTest : Callback {
 
     @Test
     fun findAll() {
-        pultusORM.get(Student())
+        pultusORM.find(Student())
     }
 
     @Test
     fun findWithCondition() {
         val condition: PultusORMCondition = PultusORMCondition()
-        condition.eq("name", "Sayem")
-        pultusORM.get(Student(), condition)
+                .eq("name", "sakib")
+                .and()
+                .greaterEq("cgpa", 18)
+                .or()
+                .startsWith("name", "sami")
+                .sort("name", PultusORMQuery.Sort.DESCENDING)
+                .sort("department", PultusORMQuery.Sort.ASCENDING)
+
+        val students = pultusORM.find(Student(), condition)
+        for (it in students) {
+            val student = it as Student
+            println("${student.studentId}")
+            println("${student.name}")
+        }
     }
 
     override fun onSuccess(type: PultusORMQuery.Type) {

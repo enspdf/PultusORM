@@ -96,7 +96,7 @@ class PultusORMQuery(connection: Connection) {
                 resultList.add(jsonAsObject(clazz, it))
             }
         } catch (exception: Exception) {
-            throwback("Malformed query <${query.toString()}>.")
+            throwback("Malformed query <${query.toString()}>. Caused by ${exception.message}")
         }
         return resultList
     }

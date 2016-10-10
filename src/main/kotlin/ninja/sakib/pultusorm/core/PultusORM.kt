@@ -57,11 +57,21 @@ class PultusORM {
         PultusORMQuery(connection!!).update(clazz, updater, callback)
     }
 
+    @Deprecated("use find")
     fun get(clazz: Any): MutableList<Any> {
         return PultusORMQuery(connection!!).get(clazz)
     }
 
+    fun find(clazz: Any): MutableList<Any> {
+        return PultusORMQuery(connection!!).get(clazz)
+    }
+
+    @Deprecated("use find")
     fun get(clazz: Any, condition: PultusORMCondition): MutableList<Any> {
+        return PultusORMQuery(connection!!).get(clazz, condition)
+    }
+
+    fun find(clazz: Any, condition: PultusORMCondition): MutableList<Any> {
         return PultusORMQuery(connection!!).get(clazz, condition)
     }
 

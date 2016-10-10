@@ -12,97 +12,139 @@ class PultusORMCondition {
     private var sortQuery: StringBuilder = StringBuilder()
     private var groupQuery: StringBuilder = StringBuilder()
 
-    fun eq(key: String, value: Any) {
+    fun eq(key: String, value: Any): PultusORMCondition {
         addSeparator()
 
         if (value is String)
             conditionQuery.append("$key = '$value'")
         else conditionQuery.append("$key = $value")
+        return this
     }
 
-    fun notEq(key: String, value: Any) {
+    fun notEq(key: String, value: Any): PultusORMCondition {
         addSeparator()
 
         if (value is String)
             conditionQuery.append("$key != '$value'")
         else conditionQuery.append("$key != $value")
+        return this
     }
 
-    fun between(begin: Int, end: Int) {
+    fun between(begin: Int, end: Int): PultusORMCondition {
         addSeparator()
+
         conditionQuery.append("BETWEEN $begin AND $end")
+        return this
     }
 
-    fun In(begin: Int, end: Int) {
+    fun In(begin: Int, end: Int): PultusORMCondition {
         addSeparator()
+
         conditionQuery.append("IN($begin,$end)")
+        return this
     }
 
-    fun notIn(begin: Int, end: Int) {
+    fun notIn(begin: Int, end: Int): PultusORMCondition {
         addSeparator()
+
         conditionQuery.append("NOT IN($begin,$end)")
+        return this
     }
 
-    fun and() {
+    fun and(): PultusORMCondition {
         addSeparator()
+
         conditionQuery.append("AND")
+        return this
     }
 
-    fun or() {
+    fun or(): PultusORMCondition {
         addSeparator()
 
         conditionQuery.append("OR")
+        return this
     }
 
-    fun or(condition: PultusORMCondition) {
+    fun or(condition: PultusORMCondition): PultusORMCondition {
         addSeparator()
 
         conditionQuery.append("OR (${condition.conditionQuery.toString()})")
+        return this
     }
 
-    fun greater(key: String, value: Int) {
+    fun greater(key: String, value: Int): PultusORMCondition {
         addSeparator()
 
         conditionQuery.append("$key > $value")
+        return this
     }
 
-    fun less(key: String, value: Int) {
+    fun less(key: String, value: Int): PultusORMCondition {
         addSeparator()
 
         conditionQuery.append("$key < $value")
+        return this
     }
 
-    fun greaterEq(key: String, value: Int) {
+    fun greaterEq(key: String, value: Int): PultusORMCondition {
         addSeparator()
 
         conditionQuery.append("$key >= $value")
+        return this
     }
 
-    fun lessEq(key: String, value: Int) {
+    fun lessEq(key: String, value: Int): PultusORMCondition {
         addSeparator()
 
         conditionQuery.append("$key <= $value")
+        return this
     }
 
-    fun sort(columnName: String, order: PultusORMQuery.Sort) {
+    fun sort(columnName: String, order: PultusORMQuery.Sort): PultusORMCondition {
+        if (sortQuery.isNotEmpty())
+            sortQuery.append(",")
+
         when (order) {
             PultusORMQuery.Sort.ASCENDING -> {
                 addSeparator()
 
-                sortQuery.append("ORDER BY $columnName ASC")
+                sortQuery.append("$columnName ASC")
             }
             PultusORMQuery.Sort.DESCENDING -> {
                 addSeparator()
 
-                sortQuery.append("ORDER BY $columnName DESC")
+                sortQuery.append("$columnName DESC")
             }
         }
+        return this
     }
 
-    fun group(columnName: String) {
+    fun group(columnName: String): PultusORMCondition {
         if (groupQuery.isNotEmpty())
             groupQuery.append(",")
         groupQuery.append("$columnName")
+        return this
+    }
+
+    fun startsWith(columnName: String, value: Any): PultusORMCondition {
+        addSeparator()
+
+        conditionQuery.append("$columnName LIKE '$value%'")
+        return this
+    }
+
+    fun endsWith(columnName: String, value: Any): PultusORMCondition {
+        addSeparator()
+
+        conditionQuery.append("$columnName LIKE '%$value'")
+        return this
+    }
+
+    fun contains(columnName: String, value: Any): PultusORMCondition {
+        addSeparator()
+
+        conditionQuery.append("$columnName LIKE '%$value%'")
+        return this
     }
 
     fun rawQuery(): String {
@@ -118,7 +160,9 @@ class PultusORMCondition {
 
         if (query.isNotEmpty())
             query.append(" ")
-        query.append("${sortQuery.toString()}")
+
+        if (sortQuery.isNotEmpty())
+            query.append("ORDER BY ${sortQuery.toString()}")
 
         return query.toString()
     }
