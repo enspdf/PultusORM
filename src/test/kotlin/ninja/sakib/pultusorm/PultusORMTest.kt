@@ -1,10 +1,7 @@
 package ninja.sakib.pultusorm
 
 import ninja.sakib.pultusorm.callbacks.Callback
-import ninja.sakib.pultusorm.core.PultusORM
-import ninja.sakib.pultusorm.core.PultusORMCondition
-import ninja.sakib.pultusorm.core.PultusORMQuery
-import ninja.sakib.pultusorm.core.enableDebugMode
+import ninja.sakib.pultusorm.core.*
 import ninja.sakib.pultusorm.exceptions.PultusORMException
 import ninja.sakib.pultusorm.models.Student
 import org.junit.After
@@ -40,16 +37,24 @@ class PultusORMTest : Callback {
     @Test
     fun saveTestWithCallback() {
         val student: Student = Student()
-        student.name = "Sayem"
+        student.name = "Ayasha"
         student.department = "CSE"
-        student.cgpa = 2.2
+        student.cgpa = 3.7
 
         pultusORM.save(student, this)
     }
 
     @Test
     fun findAll() {
-        pultusORM.find(Student())
+        val students = pultusORM.find(Student())
+        for (it in students) {
+            val student = it as Student
+            println(student.studentId)
+            println(student.name)
+            println(student.department)
+            println(student.cgpa)
+            println()
+        }
     }
 
     @Test
@@ -74,8 +79,27 @@ class PultusORMTest : Callback {
         }
     }
 
-    override fun onSuccess(type: PultusORMQuery.Type) {
+    @Test
+    fun updateValue() {
+        val condition: PultusORMCondition = PultusORMCondition.Builder()
+                .eq("name", "Sakib")
+                .build()
 
+        val updater: PultusORMUpdater = PultusORMUpdater.Builder()
+                .set("name", "Sayan Nur")
+                .condition(condition)
+                .build()
+
+        pultusORM.update(Student(), updater)
+    }
+
+    @Test
+    fun deleteValue() {
+        pultusORM.delete(Student())
+    }
+
+    override fun onSuccess(type: PultusORMQuery.Type) {
+        println("${type.name} success")
     }
 
     override fun onFailure(type: PultusORMQuery.Type, exception: PultusORMException) {

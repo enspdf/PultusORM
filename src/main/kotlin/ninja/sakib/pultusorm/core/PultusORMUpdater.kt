@@ -7,20 +7,13 @@ package ninja.sakib.pultusorm.core
  * := Coffee : Dream : Code
  */
 
-class PultusORMUpdater {
+class PultusORMUpdater private constructor(condition: PultusORMCondition?, updateQuery: StringBuilder) {
     private var condition: PultusORMCondition? = null
-    private val updateQuery: StringBuilder = StringBuilder()
+    private var updateQuery: StringBuilder = StringBuilder()
 
-    fun set(columnName: String, newValue: Any) {
-        addSeparator()
-
-        if (newValue is String)
-            updateQuery.append("$columnName = '$newValue'")
-        else updateQuery.append("$columnName = $newValue")
-    }
-
-    fun condition(condition: PultusORMCondition) {
+    init {
         this.condition = condition
+        this.updateQuery = updateQuery
     }
 
     fun condition(): PultusORMCondition? {
@@ -31,8 +24,31 @@ class PultusORMUpdater {
         return updateQuery.toString()
     }
 
-    private fun addSeparator() {
-        if (updateQuery.trim().isNotEmpty())
-            updateQuery.append(", ")
+    class Builder {
+        private var condition: PultusORMCondition? = null
+        private val updateQuery: StringBuilder = StringBuilder()
+
+        fun set(columnName: String, newValue: Any): Builder {
+            addSeparator()
+
+            if (newValue is String)
+                updateQuery.append("$columnName = '$newValue'")
+            else updateQuery.append("$columnName = $newValue")
+            return this
+        }
+
+        fun condition(condition: PultusORMCondition): Builder {
+            this.condition = condition
+            return this
+        }
+
+        fun build(): PultusORMUpdater {
+            return PultusORMUpdater(condition, updateQuery)
+        }
+
+        private fun addSeparator() {
+            if (updateQuery.trim().isNotEmpty())
+                updateQuery.append(", ")
+        }
     }
 }
