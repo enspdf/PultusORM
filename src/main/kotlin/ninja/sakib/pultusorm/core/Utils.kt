@@ -20,9 +20,13 @@ import java.lang.reflect.Type
  */
 
 
-// Flag to logging on off
+/**
+ * Flag to logging on off
+ */
 var isDebugEnabled = false
-// Class to Json converter
+/**
+ * Class to Json converter
+ */
 val objectToJsonConverter: Gson = GsonBuilder().create()
 
 /**

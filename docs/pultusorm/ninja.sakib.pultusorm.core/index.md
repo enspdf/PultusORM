@@ -20,11 +20,8 @@ Class used to update value of fields |
 
 | Name | Summary |
 |---|---|
-| [isDebugEnabled](is-debug-enabled.md) | `var isDebugEnabled: Boolean`<br>:= Coded with love by Sakib Sami on 9/27/16.
-:= s4kibs4mi@gmail.com
-:= www.sakib.ninja
-:= Coffee : Dream : Code |
-| [objectToJsonConverter](object-to-json-converter.md) | `val objectToJsonConverter: Gson` |
+| [isDebugEnabled](is-debug-enabled.md) | `var isDebugEnabled: Boolean`<br>Flag to logging on off |
+| [objectToJsonConverter](object-to-json-converter.md) | `val objectToJsonConverter: Gson`<br>Class to Json converter |
 
 ### Functions
 

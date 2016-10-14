@@ -3,3 +3,6 @@
 # objectToJsonConverter
 
 `val objectToJsonConverter: Gson`
+
+Class to Json converter
+
