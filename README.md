@@ -27,7 +27,7 @@ allprojects {
 And
 ```
 dependencies {
-    compile 'com.github.s4kibs4mi:PultusORM:beta-0.0.4'
+    compile 'ninja.sakib:PultusORM:beta-0.0.4'
 }
 ```
 
@@ -43,15 +43,15 @@ dependencies {
 And
 ```
 <dependency>
-    <groupId>com.github.s4kibs4mi</groupId>
+    <groupId>ninja.sakib</groupId>
     <artifactId>PultusORM</artifactId>
     <version>beta-0.0.4</version>
 </dependency>
 ```
 
-In case you need jar [download](https://jitpack.io/com/github/s4kibs4mi/PultusORM/beta-0.0.4/PultusORM-beta-0.0.4.jar).
+In case you need jar [download](https://jitpack.io/ninja/sakib/PultusORM/beta-0.0.4/PultusORM-beta-0.0.4.jar).
 
-[More option...](https://jitpack.io/#s4kibs4mi/PultusORM/beta-0.0.4)
+[More option...](https://jitpack.io/#ninja.sakib/PultusORM/beta-0.0.4)
 
 ### Examples
 
