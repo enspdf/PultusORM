@@ -9,6 +9,11 @@ import java.lang.Exception
  * := Coffee : Dream : Code
  */
 
+/**
+ * Custom Exception class for PultusORM
+ * This is class is used to handle exception
+ * if any occur
+ */
 class PultusORMException(msg: String) : Exception() {
     private var msg: String = ""
 

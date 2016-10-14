@@ -10,7 +10,6 @@ package ninja.sakib.pultusorm.annotations
 /**
  * Annotation to mark a field as unique
  */
-
 @Retention(AnnotationRetention.RUNTIME)
 @Target(AnnotationTarget.FIELD)
 annotation class Unique()

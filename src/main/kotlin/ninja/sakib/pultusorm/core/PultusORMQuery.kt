@@ -16,7 +16,14 @@ import kotlin.properties.Delegates
  * := Coffee : Dream : Code
  */
 
+/**
+ *  Base Class of PultusORM API
+ *  to execute queries
+ */
 class PultusORMQuery(connection: Connection) {
+    /**
+     * Query Type
+     */
     enum class Type {
         SAVE,
         UPDATE,
@@ -24,6 +31,9 @@ class PultusORMQuery(connection: Connection) {
         DROP
     }
 
+    /**
+     * Sort Type
+     */
     enum class Sort {
         ASCENDING,
         DESCENDING
@@ -35,6 +45,10 @@ class PultusORMQuery(connection: Connection) {
         this.statement = connection.createStatement()
     }
 
+    /**
+     * Method to save value
+     * @param clazz
+     */
     fun save(clazz: Any) {
         try {
             createTable(clazz)
@@ -46,6 +60,11 @@ class PultusORMQuery(connection: Connection) {
         }
     }
 
+    /**
+     * Method to save value with callback
+     * @param clazz
+     * @param callback
+     */
     fun save(clazz: Any, callback: Callback) {
         kotlin.run {
             try {
@@ -60,6 +79,12 @@ class PultusORMQuery(connection: Connection) {
         }
     }
 
+    /**
+     * Method to get value based on condition
+     * @param clazz
+     * @param condition
+     * @return MutableList of type Any
+     */
     fun get(clazz: Any, condition: PultusORMCondition): MutableList<Any> {
         createTable(clazz)
 
@@ -101,6 +126,11 @@ class PultusORMQuery(connection: Connection) {
         return resultList
     }
 
+    /**
+     * Method to get value
+     * @param clazz
+     * @return MutableList of type Any
+     */
     fun get(clazz: Any): MutableList<Any> {
         createTable(clazz)
 
@@ -137,6 +167,11 @@ class PultusORMQuery(connection: Connection) {
         return resultList
     }
 
+    /**
+     * Method to update value
+     * @param clazz
+     * @param updateQuery update parameters
+     */
     fun update(clazz: Any, updateQuery: PultusORMUpdater) {
         createTable(clazz)
 
@@ -147,6 +182,12 @@ class PultusORMQuery(connection: Connection) {
         }
     }
 
+    /**
+     * Method to update value with callback
+     * @param clazz
+     * @param updateQuery update parameters
+     * @param callback
+     */
     fun update(clazz: Any, updateQuery: PultusORMUpdater, callback: Callback) {
         kotlin.run {
             createTable(clazz)
@@ -161,6 +202,10 @@ class PultusORMQuery(connection: Connection) {
         }
     }
 
+    /**
+     * Method to delete value
+     * @param clazz
+     */
     fun delete(clazz: Any) {
         createTable(clazz)
 
@@ -172,6 +217,11 @@ class PultusORMQuery(connection: Connection) {
         }
     }
 
+    /**
+     * Method to delete value based on condition
+     * @param clazz
+     * @param condition condition to update value
+     */
     fun delete(clazz: Any, condition: PultusORMCondition) {
         createTable(clazz)
 
@@ -183,6 +233,11 @@ class PultusORMQuery(connection: Connection) {
         }
     }
 
+    /**
+     * Method to delete value with callback
+     * @param clazz
+     * @param callback
+     */
     fun delete(clazz: Any, callback: Callback) {
         createTable(clazz)
 
@@ -197,6 +252,12 @@ class PultusORMQuery(connection: Connection) {
         }
     }
 
+    /**
+     * Method to delete value based on condition with callback
+     * @param clazz
+     * @param condition
+     * @param callback
+     */
     fun delete(clazz: Any, condition: PultusORMCondition, callback: Callback) {
         createTable(clazz)
 
@@ -211,6 +272,10 @@ class PultusORMQuery(connection: Connection) {
         }
     }
 
+    /**
+     * Method to delete table
+     * @param clazz
+     */
     fun drop(clazz: Any) {
         try {
             if (isTableExists(clazz.javaClass.simpleName))
@@ -220,6 +285,11 @@ class PultusORMQuery(connection: Connection) {
         }
     }
 
+    /**
+     * Method to delete table with callback
+     * @param clazz
+     * @param callback
+     */
     fun drop(clazz: Any, callback: Callback) {
         kotlin.run {
             try {
@@ -237,6 +307,11 @@ class PultusORMQuery(connection: Connection) {
         }
     }
 
+    /**
+     * Method to get count of values
+     * @param clazz
+     * @return Long
+     */
     fun count(clazz: Any): Long {
         createTable(clazz)
 
@@ -253,6 +328,11 @@ class PultusORMQuery(connection: Connection) {
         return counter
     }
 
+    /**
+     * Method to check is table exists or not
+     * @param tableName name of the table
+     * @return Boolean
+     */
     private fun isTableExists(tableName: String): Boolean {
         val result = statement.executeQuery("SELECT * FROM ${SqliteSystem.getTableName()}" +
                 " WHERE type='${SqliteSystem.Type.TABLE.name.toLowerCase()}' AND name='$tableName';")
@@ -266,6 +346,10 @@ class PultusORMQuery(connection: Connection) {
         return isExist
     }
 
+    /**
+     * Method to create table
+     * @param clazz
+     */
     private fun createTable(clazz: Any) {
         statement.execute(Builder().create(clazz))
         log(this.javaClass.simpleName, "table ${clazz.javaClass.simpleName} has been created.")
@@ -284,8 +368,8 @@ class PultusORMQuery(connection: Connection) {
                 if (isFirst.not())
                     queryBuilder.append(", ")
 
-                val fieldPart: String = "${field.name} ${typeToSQL(field.genericType)} ${isPrimaryKeyEnabled(field)} " +
-                        "${isAutoIncrementEnabled(field)} ${isNotNullEnabled(field)} ${isUniqueEnabled(field)}"
+                val fieldPart: String = "${field.name} ${typeToSQL(field.genericType)} ${toPrimaryKey(field)} " +
+                        "${toAutoIncrement(field)} ${toNotNull(field)} ${toUnique(field)}"
                 queryBuilder.append(fieldPart.trim())
 
                 isFirst = false

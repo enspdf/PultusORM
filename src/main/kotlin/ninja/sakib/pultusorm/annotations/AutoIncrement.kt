@@ -10,7 +10,6 @@ package ninja.sakib.pultusorm.annotations
 /**
  * Annotation to mark a field auto increment enabled
  */
-
 @Target(AnnotationTarget.FIELD)
 @Retention(AnnotationRetention.RUNTIME)
 annotation class AutoIncrement()

@@ -11,7 +11,6 @@ package ninja.sakib.pultusorm.annotations;
 /**
  * Annotation to mark a field as primary key
  */
-
 @Target(AnnotationTarget.FIELD)
 @Retention(AnnotationRetention.RUNTIME)
 annotation class PrimaryKey()

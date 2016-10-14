@@ -7,6 +7,9 @@ package ninja.sakib.pultusorm.system
  * := Coffee : Dream : Code
  */
 
+/**
+ * Class to provide value of Sqlite System
+ */
 class SqliteSystem {
     enum class Type {
         TABLE,
@@ -14,10 +17,18 @@ class SqliteSystem {
     }
 
     companion object {
+        /**
+         * Method to get sqlite system table name
+         * @return String
+         */
         fun getTableName(): String {
             return "sqlite_master"
         }
 
+        /**
+         * Method to get sqlite system temporary table name
+         * @return String
+         */
         fun getTempTableName(): String {
             return "sqlite_temp_master"
         }

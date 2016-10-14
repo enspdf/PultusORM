@@ -10,7 +10,6 @@ package ninja.sakib.pultusorm.annotations
 /**
  * Annotation to mark a field not to be null
  */
-
 @Target(AnnotationTarget.FIELD)
 @Retention(AnnotationRetention.RUNTIME)
 annotation class NotNull()

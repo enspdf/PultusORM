@@ -7,6 +7,10 @@ package ninja.sakib.pultusorm.core
  * := Coffee : Dream : Code
  */
 
+/**
+ * PultusORMUpdater
+ * Class used to update value of fields
+ */
 class PultusORMUpdater private constructor(condition: PultusORMCondition?, updateQuery: StringBuilder) {
     private var condition: PultusORMCondition? = null
     private var updateQuery: StringBuilder = StringBuilder()
@@ -16,32 +20,62 @@ class PultusORMUpdater private constructor(condition: PultusORMCondition?, updat
         this.updateQuery = updateQuery
     }
 
+    /**
+     * Method to get condition
+     * which will be used to
+     * update value of fields
+     * @return PultusORMCondition
+     */
     fun condition(): PultusORMCondition? {
         return condition
     }
 
+    /**
+     * Method to get update query
+     * which will be used to
+     * update value of fields
+     * @return String
+     */
     fun updateQuery(): String {
         return updateQuery.toString()
     }
 
+    /**
+     * Builder class is to create updater
+     */
     class Builder {
         private var condition: PultusORMCondition? = null
         private val updateQuery: StringBuilder = StringBuilder()
 
-        fun set(columnName: String, newValue: Any): Builder {
+        /**
+         *  Method to add field name and new value
+         *  @param fieldName name of field to update value
+         *  @param newValue new value of the field
+         *  return Builder
+         */
+        fun set(fieldName: String, newValue: Any): Builder {
             addSeparator()
 
             if (newValue is String)
-                updateQuery.append("$columnName = '$newValue'")
-            else updateQuery.append("$columnName = $newValue")
+                updateQuery.append("$fieldName = '$newValue'")
+            else updateQuery.append("$fieldName = $newValue")
             return this
         }
 
+        /**
+         * Method to add update condition
+         * @param condition on which condition values will be updated
+         * @return Builder
+         */
         fun condition(condition: PultusORMCondition): Builder {
             this.condition = condition
             return this
         }
 
+        /**
+         * Method to build updater
+         * @return PultusORMUpdater
+         */
         fun build(): PultusORMUpdater {
             return PultusORMUpdater(condition, updateQuery)
         }

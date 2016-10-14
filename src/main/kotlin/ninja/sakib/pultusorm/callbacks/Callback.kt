@@ -13,14 +13,15 @@ import ninja.sakib.pultusorm.exceptions.PultusORMException
 /**
  * Interface to get callback on async query
  */
-
 interface Callback {
     /**
-     * @param type this is to indicate on which task firing this callback
+     * Method will be called on successful task
+     * @param type this is to indicate from which task firing this callback
      */
     fun onSuccess(type: PultusORMQuery.Type)
 
     /**
+     * Method will be called on failure of task
      * @param type this is to indicate on which task firing this callback
      * @param exception failure information
      */
