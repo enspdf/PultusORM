@@ -19,6 +19,10 @@ import java.lang.reflect.Type
  * := Coffee : Dream : Code
  */
 
+/**
+ * Utilities
+ */
+
 var isDebugEnabled = false
 val objectToJsonConverter: Gson = GsonBuilder().create()
 
