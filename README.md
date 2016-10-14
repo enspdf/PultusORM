@@ -1,4 +1,4 @@
-## PultusORM
+# PultusORM [![](https://jitpack.io/v/ninja.sakib/PultusORM.svg)](https://jitpack.io/#ninja.sakib/PultusORM)
 PultusORM is a sqlite ORM library for kotlin on top of sqlite jdbc driver.
 
 status : active<br>
