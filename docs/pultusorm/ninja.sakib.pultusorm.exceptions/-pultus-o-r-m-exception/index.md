@@ -10,11 +10,14 @@ if any occur
 
 ### Constructors
 
+| Name | Summary |
+|---|---|
 | [&lt;init&gt;](-init-.md) | `PultusORMException(msg: String)`<br>Custom Exception class for PultusORM
 This is class is used to handle exception
 if any occur |
 
 ### Properties
 
+| Name | Summary |
+|---|---|
 | [message](message.md) | `val message: String?` |
-

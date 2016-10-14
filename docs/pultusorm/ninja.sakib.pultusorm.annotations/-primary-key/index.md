@@ -8,5 +8,6 @@ Annotation to mark a field as primary key
 
 ### Constructors
 
+| Name | Summary |
+|---|---|
 | [&lt;init&gt;](-init-.md) | `PrimaryKey()`<br>Annotation to mark a field as primary key |
-

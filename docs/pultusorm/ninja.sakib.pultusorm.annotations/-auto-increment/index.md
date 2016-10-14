@@ -8,5 +8,6 @@ Annotation to mark a field auto increment enabled
 
 ### Constructors
 
+| Name | Summary |
+|---|---|
 | [&lt;init&gt;](-init-.md) | `AutoIncrement()`<br>Annotation to mark a field auto increment enabled |
-

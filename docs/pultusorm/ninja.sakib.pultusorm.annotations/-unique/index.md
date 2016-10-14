@@ -8,5 +8,6 @@ Annotation to mark a field as unique
 
 ### Constructors
 
+| Name | Summary |
+|---|---|
 | [&lt;init&gt;](-init-.md) | `Unique()`<br>Annotation to mark a field as unique |
-

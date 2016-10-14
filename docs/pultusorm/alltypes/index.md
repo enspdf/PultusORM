@@ -2,6 +2,8 @@
 
 ### All Types
 
+| Name | Summary |
+|---|---|
 | [ninja.sakib.pultusorm.annotations.AutoIncrement](../ninja.sakib.pultusorm.annotations/-auto-increment/index.md) | Annotation to mark a field auto increment enabled |
 | [ninja.sakib.pultusorm.callbacks.Callback](../ninja.sakib.pultusorm.callbacks/-callback/index.md) | Interface to get callback on async query |
 | [ninja.sakib.pultusorm.annotations.NotNull](../ninja.sakib.pultusorm.annotations/-not-null/index.md) | Annotation to mark a field not to be null |
@@ -20,4 +22,3 @@ to execute queries |
 Class used to update value of fields |
 | [ninja.sakib.pultusorm.system.SqliteSystem](../ninja.sakib.pultusorm.system/-sqlite-system/index.md) | Class to provide value of Sqlite System |
 | [ninja.sakib.pultusorm.annotations.Unique](../ninja.sakib.pultusorm.annotations/-unique/index.md) | Annotation to mark a field as unique |
-

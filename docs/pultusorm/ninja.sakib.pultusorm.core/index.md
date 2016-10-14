@@ -4,6 +4,8 @@
 
 ### Types
 
+| Name | Summary |
+|---|---|
 | [PultusORM](-pultus-o-r-m/index.md) | `class PultusORM`<br>Base class of PultusORM API
 It handles database connection
 and serves queries |
@@ -16,6 +18,8 @@ Class used to update value of fields |
 
 ### Properties
 
+| Name | Summary |
+|---|---|
 | [isDebugEnabled](is-debug-enabled.md) | `var isDebugEnabled: Boolean`<br>:= Coded with love by Sakib Sami on 9/27/16.
 := s4kibs4mi@gmail.com
 := www.sakib.ninja
@@ -24,6 +28,8 @@ Class used to update value of fields |
 
 ### Functions
 
+| Name | Summary |
+|---|---|
 | [enableDebugMode](enable-debug-mode.md) | `fun enableDebugMode(enable: Boolean): Unit`<br>Method to enable/disable debug &amp; logging mode |
 | [getUserHomeDirectory](get-user-home-directory.md) | `fun getUserHomeDirectory(): String`<br>Method to get users home directory |
 | [isAutoIncrement](is-auto-increment.md) | `fun isAutoIncrement(value: `[`Field`](http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Field.html)`): Boolean`<br>Method to check whether type is auto increment annotated |
@@ -46,4 +52,3 @@ Class used to update value of fields |
 | [toPrimaryKey](to-primary-key.md) | `fun toPrimaryKey(value: `[`Field`](http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Field.html)`): String`<br>Method to convert primary key annotation to sql text |
 | [toUnique](to-unique.md) | `fun toUnique(value: `[`Field`](http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Field.html)`): String`<br>Method to convert unique to sql text |
 | [typeToSQL](type-to-s-q-l.md) | `fun typeToSQL(value: `[`Type`](http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html)`): String`<br>Method to convert primitive types to sql string |
-

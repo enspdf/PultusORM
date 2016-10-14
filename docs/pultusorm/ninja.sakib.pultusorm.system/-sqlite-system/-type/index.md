@@ -6,6 +6,7 @@
 
 ### Enum Values
 
+| Name | Summary |
+|---|---|
 | [TABLE](-t-a-b-l-e.md) |  |
 | [COLUMN](-c-o-l-u-m-n.md) |  |
-
