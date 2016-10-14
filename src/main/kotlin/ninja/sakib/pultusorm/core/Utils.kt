@@ -19,9 +19,6 @@ import java.lang.reflect.Type
  * := Coffee : Dream : Code
  */
 
-/**
- * Utilities
- */
 
 // Flag to logging on off
 var isDebugEnabled = false
