@@ -140,7 +140,7 @@ val pultusORM: PultusORM = PultusORM("test.db", "/Users/s4kib/")
 pultusORM.delete(User())
 ```
 
-**Check [Wiki](https://github.com/s4kibs4mi/PultusORM/wiki) for more examples & API docs**
+**Check [Wiki](https://github.com/s4kibs4mi/PultusORM/wiki) for more examples & [API docs](https://github.com/s4kibs4mi/PultusORM/blob/master/docs/pultusorm/index.md)**
 
 #
 #####Note :
