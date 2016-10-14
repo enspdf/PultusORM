@@ -7,6 +7,10 @@ package ninja.sakib.pultusorm.annotations
  * := Coffee : Dream : Code
  */
 
+/**
+ * Annotation to mark a field as unique
+ */
+
 @Retention(AnnotationRetention.RUNTIME)
 @Target(AnnotationTarget.FIELD)
 annotation class Unique()

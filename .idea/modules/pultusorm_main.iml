@@ -14,6 +14,8 @@
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.7" level="project" />
     <orderEntry type="library" name="Gradle: com.eclipsesource.minimal-json:minimal-json:0.9.4" level="project" />
     <orderEntry type="library" name="Gradle: org.xerial:sqlite-jdbc:3.14.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.dokka:dokka-gradle-plugin:0.9.9" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-runtime:1.0.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.dokka:dokka-fatjar:0.9.9" level="project" />
   </component>
 </module>

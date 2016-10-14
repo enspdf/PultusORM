@@ -7,6 +7,10 @@ package ninja.sakib.pultusorm.annotations
  * := Coffee : Dream : Code
  */
 
+/**
+ * Annotation to mark a field auto increment enabled
+ */
+
 @Target(AnnotationTarget.FIELD)
 @Retention(AnnotationRetention.RUNTIME)
 annotation class AutoIncrement()
