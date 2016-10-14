@@ -23,7 +23,9 @@ import java.lang.reflect.Type
  * Utilities
  */
 
+// Flag to logging on off
 var isDebugEnabled = false
+// Class to Json converter
 val objectToJsonConverter: Gson = GsonBuilder().create()
 
 /**
