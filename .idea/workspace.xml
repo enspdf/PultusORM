@@ -61,8 +61,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/stylesheets/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="417" column="11" selection-start-line="417" selection-start-column="11" selection-end-line="417" selection-end-column="11" />
+            <state relative-caret-position="333">
+              <caret line="421" column="0" selection-start-line="421" selection-start-column="0" selection-end-line="421" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1186,14 +1186,7 @@
       <workItem from="1476475637645" duration="85000" />
       <workItem from="1476475724580" duration="391000" />
       <workItem from="1476547245250" duration="359000" />
-      <workItem from="1476547667886" duration="8481000" />
-    </task>
-    <task id="LOCAL-00009" summary="documentation added">
-      <created>1476458676290</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1476458676290</updated>
+      <workItem from="1476547667886" duration="8522000" />
     </task>
     <task id="LOCAL-00010" summary="documentation added">
       <created>1476459110572</created>
@@ -1531,7 +1524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476557200897</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="documentation site updated">
+      <created>1476557389156</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1476557389157</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1567,7 +1567,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49997000" />
+    <option name="totallyTimeSpent" value="50038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
@@ -1759,8 +1759,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/stylesheets/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="417" column="11" selection-start-line="417" selection-start-column="11" selection-end-line="417" selection-end-column="11" />
+        <state relative-caret-position="333">
+          <caret line="421" column="0" selection-start-line="421" selection-start-column="0" selection-end-line="421" selection-end-column="0" />
           <folding />
         </state>
       </provider>
