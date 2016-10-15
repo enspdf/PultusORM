@@ -418,6 +418,7 @@ footer {
 div.pcode {
     padding-left: 1em;
     background: rgba(74, 124, 179, 0.63);
+    font-style: italic;
 }
 
 tab1 {
