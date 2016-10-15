@@ -45,39 +45,35 @@
         <h6>Gradle ( build.gradle )</h6>
         <code class="json">
             allprojects {
-            repositories {
-            maven {
-            url "https://jitpack.io"
-            }
-            }
+                repositories {
+                    maven {
+                        url "https://jitpack.io"
+                    }
+                }
             }
         </code>
         <code class="json">
             dependencies {
-            compile 'ninja.sakib:PultusORM:beta-0.0.5'
+                compile 'ninja.sakib:PultusORM:beta-0.0.5'
             }
         </code>
 
         <h6>Maven</h6>
-        <pre>
-            <code class="xml">
-                <repositories>
-                    <repository>
-                        <id>jitpack.io</id>
-                        <url>https://jitpack.io</url>
-                    </repository>
-                </repositories>
-            </code>
-        </pre>
-        <pre>
-            <code class="xml">
-                <dependency>
-                    <groupId>ninja.sakib</groupId>
-                    <artifactId>PultusORM</artifactId>
-                    <version>beta-0.0.5</version>
-                </dependency>
-            </code>
-        </pre>
+        <code>
+            <repositories>
+                <repository>
+                    <id>jitpack.io</id>
+                    <url>https://jitpack.io</url>
+                </repository>
+            </repositories>
+        </code>
+        <code>
+            <dependency>
+                <groupId>ninja.sakib</groupId>
+                <artifactId>PultusORM</artifactId>
+                <version>beta-0.0.5</version>
+            </dependency>
+        </code>
         </p>
 
         <h3>
