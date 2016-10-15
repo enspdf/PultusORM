@@ -41,17 +41,19 @@
         <h6>Gradle (build.gradle)</h6>
         <code>
             allprojects {<br>
-            repositories {<br>
-            ...<br>
-            maven { url "https://jitpack.io" }<br>
-            }<br>
+            &#09;repositories {<br>
+            &#09;&#09;...<br>
+            &#09;&#09;maven {<br>
+            &#09;&#09;&#09;url "https://jitpack.io"<br>
+            &#09;&#09;}<br>
+            &#09;}<br>
             }
-        </code>
-        and
+        </code><br>
+        and<br>
         <code>
             dependencies {<br>
-            compile 'ninja.sakib:PultusORM:beta-0.0.5'<br>
-            }
+            &#09;compile 'ninja.sakib:PultusORM:beta-0.0.5'<br>
+            }<br>
         </code>
         </p>
 
