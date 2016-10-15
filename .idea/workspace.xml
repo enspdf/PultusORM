@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5659d2b4-6d05-48dc-9bb5-673b6fda6cdc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/stylesheets/styles.css" afterPath="$PROJECT_DIR$/docs/stylesheets/styles.css" />
     </list>
     <ignored path="PultusORM.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +48,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -58,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/stylesheets/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7200">
+            <state relative-caret-position="513">
               <caret line="480" column="0" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
               <folding />
             </state>
@@ -457,8 +457,8 @@
         <option value="$PROJECT_DIR$/docs/stylesheets/github_dark.css" />
         <option value="$PROJECT_DIR$/docs/stylesheets/github-light.css" />
         <option value="$PROJECT_DIR$/docs/stylesheets/stylesheet.css" />
-        <option value="$PROJECT_DIR$/docs/stylesheets/styles.css" />
         <option value="$PROJECT_DIR$/docs/index.html" />
+        <option value="$PROJECT_DIR$/docs/stylesheets/styles.css" />
       </list>
     </option>
   </component>
@@ -1186,14 +1186,7 @@
       <workItem from="1476475637645" duration="85000" />
       <workItem from="1476475724580" duration="391000" />
       <workItem from="1476547245250" duration="359000" />
-      <workItem from="1476547667886" duration="7590000" />
-    </task>
-    <task id="LOCAL-00001" summary="improvement &amp; refactoring">
-      <created>1476132521859</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1476132521859</updated>
+      <workItem from="1476547667886" duration="7712000" />
     </task>
     <task id="LOCAL-00002" summary="builder style implemented">
       <created>1476133655627</created>
@@ -1531,7 +1524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476556390276</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="documentation site updated">
+      <created>1476556494407</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1476556494761</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1567,7 +1567,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49106000" />
+    <option name="totallyTimeSpent" value="49228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
@@ -1749,18 +1749,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/stylesheets/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7200">
-          <caret line="480" column="0" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/stylesheets/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="480" column="0" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
           <folding />
         </state>
       </provider>
