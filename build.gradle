@@ -23,7 +23,7 @@ apply plugin: 'org.jetbrains.dokka'
 dokka {
     moduleName = 'pultusorm'
     outputFormat = 'html'
-    outputDirectory = "$projectDir/documentation"
+    outputDirectory = "$projectDir/docs"
     sourceDirs = files('src/main/kotlin')
 }
 

@@ -1,126 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5659d2b4-6d05-48dc-9bb5-673b6fda6cdc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/alltypes/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/index-outline.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/-auto-increment/-init-.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/-auto-increment/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/-not-null/-init-.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/-not-null/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/-primary-key/-init-.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/-primary-key/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/-unique/-init-.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/-unique/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.callbacks/-callback/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.callbacks/-callback/on-failure.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.callbacks/-callback/on-success.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.callbacks/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/-in.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/-init-.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/and.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/between.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/build.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/contains.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/ends-with.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/eq.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/greater-eq.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/greater.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/group.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/less-eq.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/less.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/not-eq.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/not-in.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/or.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/raw-query.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/sort.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/starts-with.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/raw-query.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/-init-.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/create.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/delete.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/drop.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/insert.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/select.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/update.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-init-.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-sort/-a-s-c-e-n-d-i-n-g.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-sort/-d-e-s-c-e-n-d-i-n-g.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-sort/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-type/-d-e-l-e-t-e.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-type/-d-r-o-p.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-type/-s-a-v-e.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-type/-u-p-d-a-t-e.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-type/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/count.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/delete.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/drop.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/get.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/save.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/update.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/-builder/-init-.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/-builder/build.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/-builder/condition.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/-builder/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/-builder/set.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/condition.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/update-query.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/-init-.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/count.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/delete.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/drop.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/find.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/get.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/save.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/update.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/enable-debug-mode.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/get-user-home-directory.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-auto-increment.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-boolean.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-char.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-debug-enabled.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-double.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-equal.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-float.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-int.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-long.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-primary-key.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-string.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/json-as-object.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/log.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/object-as-json.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/object-to-json-converter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/parse-class-name.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/throwback.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/to-auto-increment.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/to-not-null.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/to-primary-key.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/to-unique.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/type-to-s-q-l.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.exceptions/-pultus-o-r-m-exception/-init-.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.exceptions/-pultus-o-r-m-exception/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.exceptions/-pultus-o-r-m-exception/message.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.exceptions/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/-init-.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/-type/-c-o-l-u-m-n.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/-type/-t-a-b-l-e.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/-type/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/get-table-name.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/get-temp-table-name.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.system/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documentation/style.css" />
+    <list default="true" id="5659d2b4-6d05-48dc-9bb5-673b6fda6cdc" name="Default" comment="documentation added">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/pultusorm/index-outline.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/pultusorm/index-outline.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/alltypes/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/alltypes/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/-auto-increment/-init-.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.annotations/-auto-increment/-init-.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/-auto-increment/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.annotations/-auto-increment/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/-not-null/-init-.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.annotations/-not-null/-init-.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/-not-null/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.annotations/-not-null/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/-primary-key/-init-.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.annotations/-primary-key/-init-.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/-primary-key/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.annotations/-primary-key/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/-unique/-init-.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.annotations/-unique/-init-.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/-unique/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.annotations/-unique/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.annotations/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.annotations/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.callbacks/-callback/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.callbacks/-callback/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.callbacks/-callback/on-failure.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.callbacks/-callback/on-failure.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.callbacks/-callback/on-success.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.callbacks/-callback/on-success.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.callbacks/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.callbacks/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/-in.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/-in.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/-init-.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/-init-.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/and.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/and.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/between.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/between.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/build.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/build.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/contains.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/contains.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/ends-with.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/ends-with.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/eq.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/eq.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/greater-eq.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/greater-eq.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/greater.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/greater.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/group.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/group.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/less-eq.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/less-eq.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/less.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/less.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/not-eq.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/not-eq.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/not-in.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/not-in.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/or.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/or.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/raw-query.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/raw-query.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/sort.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/sort.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/starts-with.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/-builder/starts-with.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/raw-query.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-condition/raw-query.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/-init-.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/-init-.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/create.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/create.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/delete.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/delete.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/drop.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/drop.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/insert.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/insert.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/select.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/select.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/update.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-builder/update.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-init-.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-init-.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-sort/-a-s-c-e-n-d-i-n-g.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-sort/-a-s-c-e-n-d-i-n-g.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-sort/-d-e-s-c-e-n-d-i-n-g.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-sort/-d-e-s-c-e-n-d-i-n-g.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-sort/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-sort/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-type/-d-e-l-e-t-e.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-type/-d-e-l-e-t-e.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-type/-d-r-o-p.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-type/-d-r-o-p.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-type/-s-a-v-e.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-type/-s-a-v-e.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-type/-u-p-d-a-t-e.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-type/-u-p-d-a-t-e.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-type/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/-type/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/count.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/count.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/delete.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/delete.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/drop.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/drop.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/get.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/get.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/save.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/save.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/update.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-query/update.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/-builder/-init-.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/-builder/-init-.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/-builder/build.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/-builder/build.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/-builder/condition.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/-builder/condition.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/-builder/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/-builder/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/-builder/set.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/-builder/set.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/condition.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/condition.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/update-query.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m-updater/update-query.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/-init-.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/-init-.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/count.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/count.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/delete.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/delete.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/drop.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/drop.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/find.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/find.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/get.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/get.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/save.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/save.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/update.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/-pultus-o-r-m/update.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/enable-debug-mode.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/enable-debug-mode.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/get-user-home-directory.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/get-user-home-directory.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-auto-increment.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/is-auto-increment.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-boolean.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/is-boolean.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-char.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/is-char.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-debug-enabled.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/is-debug-enabled.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-double.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/is-double.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-equal.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/is-equal.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-float.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/is-float.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-int.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/is-int.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-long.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/is-long.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-primary-key.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/is-primary-key.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/is-string.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/is-string.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/json-as-object.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/json-as-object.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/log.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/log.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/object-as-json.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/object-as-json.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/object-to-json-converter.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/object-to-json-converter.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/parse-class-name.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/parse-class-name.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/throwback.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/throwback.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/to-auto-increment.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/to-auto-increment.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/to-not-null.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/to-not-null.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/to-primary-key.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/to-primary-key.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/to-unique.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/to-unique.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.core/type-to-s-q-l.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.core/type-to-s-q-l.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.exceptions/-pultus-o-r-m-exception/-init-.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.exceptions/-pultus-o-r-m-exception/-init-.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.exceptions/-pultus-o-r-m-exception/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.exceptions/-pultus-o-r-m-exception/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.exceptions/-pultus-o-r-m-exception/message.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.exceptions/-pultus-o-r-m-exception/message.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.exceptions/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.exceptions/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/-init-.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/-init-.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/-type/-c-o-l-u-m-n.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/-type/-c-o-l-u-m-n.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/-type/-t-a-b-l-e.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/-type/-t-a-b-l-e.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/-type/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/-type/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/get-table-name.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/get-table-name.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/get-temp-table-name.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/get-temp-table-name.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.system/-sqlite-system/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/pultusorm/ninja.sakib.pultusorm.system/index.html" afterPath="$PROJECT_DIR$/docs/pultusorm/ninja.sakib.pultusorm.system/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/documentation/style.css" afterPath="$PROJECT_DIR$/docs/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
     </list>
     <ignored path="PultusORM.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -226,8 +229,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/documentation/index.html">
+        <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
@@ -426,7 +439,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2953095298000" />
+        <entry key="$PROJECT_DIR$" value="2953096406000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -618,9 +631,10 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/ninja/sakib/pultusorm/core/PultusORMQuery.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/ninja/sakib/pultusorm/core/Utils.kt" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/documentation/index.html" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/docs/index.html" />
       </list>
     </option>
   </component>
@@ -698,7 +712,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="documentation" />
+              <option name="myItemId" value="docs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1305,7 +1319,7 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1476547688830" />
+    <option name="lastUpdateTimestamp" value="1476548800277" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -1329,7 +1343,7 @@
       <workItem from="1476475637645" duration="85000" />
       <workItem from="1476475724580" duration="391000" />
       <workItem from="1476547245250" duration="359000" />
-      <workItem from="1476547667886" duration="740000" />
+      <workItem from="1476547667886" duration="942000" />
     </task>
     <task id="LOCAL-00001" summary="improvement &amp; refactoring">
       <created>1476132521859</created>
@@ -1499,7 +1513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476475622973</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="documentation added">
+      <created>1476548655267</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1476548655267</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1535,7 +1556,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42256000" />
+    <option name="totallyTimeSpent" value="42458000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
@@ -1548,6 +1569,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32519084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1558,15 +1580,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Kotlin Bytecode" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32519084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1589,13 +1610,13 @@
     <MESSAGE value="library url updated" />
     <MESSAGE value="version logo added" />
     <MESSAGE value="comment added on PultusORM class" />
-    <MESSAGE value="documentation added" />
     <MESSAGE value="documentation updated" />
     <MESSAGE value="version updated to beta 0.0.5" />
     <MESSAGE value="readme updated" />
     <MESSAGE value="doc format updated" />
     <MESSAGE value="site update" />
-    <option name="LAST_COMMIT_MESSAGE" value="site update" />
+    <MESSAGE value="documentation added" />
+    <option name="LAST_COMMIT_MESSAGE" value="documentation added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1606,7 +1627,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LICENSE" />
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/ninja/sakib/pultusorm/Test.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/ninja/sakib/pultusorm/core/Utils.kt" />
     <entry file="file://$PROJECT_DIR$/settings.gradle" />
@@ -1672,10 +1692,25 @@
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/ninja/sakib/pultusorm/annotations/AutoIncrement.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/ninja/sakib/pultusorm/core/Utils.kt" />
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/build.gradle" />
     <entry file="file://$PROJECT_DIR$/params.json" />
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/documentation/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
