@@ -36,8 +36,8 @@
 
         <h3>
             <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span
-                    aria-hidden="true" class="octicon octicon-link"></span></a>Get Started.</h3>
-        <p>
+                    aria-hidden="true" class="octicon octicon-link"></span></a>Get Started</h3>
+
         <h6>Gradle ( build.gradle )</h6>
         <div class="pcode">
             allprojects {<br>
@@ -85,15 +85,67 @@
             <br>
             &lt;/dependency&gt;<br>
         </div>
-        </p>
 
         <h3>
             <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span
-                    aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+                    aria-hidden="true" class="octicon octicon-link"></span></a>Quick Example</h3>
 
-        <p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse
-            through them. You can easily go back to edit your page before publishing. After publishing your page, you
-            can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+        <div class="pcode">
+            // This is the model class<br>
+            class Student {<br>
+            <tab1>@PrimaryKey</tab1>
+            <br>
+            <tab1>@AutoIncrement</tab1>
+            <br>
+            <tab1>var studentId: Int = 0</tab1>
+            <br>
+            <tab1>var name: String? = null</tab1>
+            <br>
+            <tab1>var department: String? = null</tab1>
+            <br>
+            <tab1>var cgpa: Double = 0.0</tab1>
+            <br>
+            }<br><br>
+
+            // Connecting to a database named univ.db<br>
+            // If database exists it will use that else create new one<br>
+            // If database path isn't set library will use user home directory<br><br>
+
+            val pultusORM: PultusORM = PultusORM("univ.db")<br><br>
+
+            // Assign values<br>
+            val student: Student = Student()<br>
+            student.name = "Sakib Sami"<br>
+            student.department = "CSE"<br>
+            student.cgpa = 2.5<br>
+
+            // Now insert value into database<br>
+            pultusORM.save(student)<br><br>
+
+            // If you want response callback<br>
+            // First implement Callback interface<br><br>
+
+            class ResponseCallback : Callback {<br>
+            <tab1>override fun onSuccess(type: PultusORMQuery.Type) {</tab1>
+            <br>
+            <tab2>log("${type.name}", "Success")</tab2>
+            <br>
+            <tab1>}</tab1>
+            <br><br>
+
+            <tab1>override fun onFailure(type: PultusORMQuery.Type, exception: PultusORMException) {</tab1>
+            <br>
+            <tab2>log("${type.name}", "Failure")</tab2>
+            <br>
+            <tab2>exception.printStackTrace()</tab2>
+            <br>
+            <tab1>}</tab1>
+            <br>
+            }<br>
+
+            // Then<br>
+            pultusORM.save(student, ResponseCallback()) // Async Insertion<br>
+        </div>
 
         <h3>
             <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span
