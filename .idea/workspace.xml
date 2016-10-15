@@ -2,93 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5659d2b4-6d05-48dc-9bb5-673b6fda6cdc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/CHANGES.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/README.ru.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/highlight.pack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/agate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/androidstudio.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/arduino-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/arta.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/ascetic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-cave-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-cave-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-dune-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-dune-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-estuary-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-estuary-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-forest-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-forest-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-heath-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-heath-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-lakeside-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-lakeside-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-plateau-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-plateau-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-savanna-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-savanna-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-seaside-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-seaside-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-sulphurpool-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atelier-sulphurpool-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atom-one-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/atom-one-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/brown-paper.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/brown-papersq.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/codepen-embed.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/color-brewer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/darcula.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/darkula.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/docco.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/dracula.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/far.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/github-gist.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/github.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/googlecode.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/grayscale.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/gruvbox-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/gruvbox-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/hopscotch.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/hybrid.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/idea.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/ir-black.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/kimbie.dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/kimbie.light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/magula.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/mono-blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/monokai-sublime.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/monokai.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/obsidian.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/ocean.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/paraiso-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/paraiso-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/pojoaque.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/pojoaque.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/purebasic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/qtcreator_dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/qtcreator_light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/railscasts.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/rainbow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/school-book.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/school-book.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/solarized-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/solarized-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/sunburst.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/tomorrow-night-blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/tomorrow-night-bright.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/tomorrow-night-eighties.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/tomorrow-night.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/tomorrow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/vs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/xcode.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/xt256.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/highlight/styles/zenburn.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/stylesheets/styles.css" afterPath="$PROJECT_DIR$/docs/stylesheets/styles.css" />
     </list>
     <ignored path="PultusORM.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -136,8 +52,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/stylesheets/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7200">
+              <caret line="480" column="0" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -531,8 +457,8 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/docs/stylesheets/github_dark.css" />
         <option value="$PROJECT_DIR$/docs/stylesheets/github-light.css" />
-        <option value="$PROJECT_DIR$/docs/stylesheets/styles.css" />
         <option value="$PROJECT_DIR$/docs/stylesheets/stylesheet.css" />
+        <option value="$PROJECT_DIR$/docs/stylesheets/styles.css" />
         <option value="$PROJECT_DIR$/docs/index.html" />
       </list>
     </option>
@@ -1261,7 +1187,7 @@
       <workItem from="1476475637645" duration="85000" />
       <workItem from="1476475724580" duration="391000" />
       <workItem from="1476547245250" duration="359000" />
-      <workItem from="1476547667886" duration="7280000" />
+      <workItem from="1476547667886" duration="7485000" />
     </task>
     <task id="LOCAL-00001" summary="improvement &amp; refactoring">
       <created>1476132521859</created>
@@ -1592,7 +1518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476555576877</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="documentation site updated">
+      <created>1476556185793</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1476556185793</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1628,7 +1561,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48796000" />
+    <option name="totallyTimeSpent" value="49001000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
@@ -1802,14 +1735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/stylesheets/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6240">
-          <caret line="416" column="0" selection-start-line="416" selection-start-column="0" selection-end-line="416" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/stylesheets/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1818,10 +1743,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/stylesheets/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7200">
+          <caret line="480" column="0" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding />
         </state>
       </provider>
