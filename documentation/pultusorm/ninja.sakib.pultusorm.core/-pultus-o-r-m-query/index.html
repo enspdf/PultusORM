@@ -1,0 +1,122 @@
+<HTML>
+<HEAD>
+<title>PultusORMQuery - pultusorm</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pultusorm</a>&nbsp;/&nbsp;<a href="../index.html">ninja.sakib.pultusorm.core</a>&nbsp;/&nbsp;<a href=".">PultusORMQuery</a><br/>
+<br/>
+<h1>PultusORMQuery</h1>
+<code><span class="keyword">class </span><span class="identifier">PultusORMQuery</span></code>
+<p>Base Class of PultusORM API
+to execute queries</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="-builder/index.html">Builder</a></td>
+<td>
+<code><span class="keyword">inner</span> <span class="keyword">class </span><span class="identifier">Builder</span></code></td>
+</tr>
+<tr>
+<td>
+<a href="-sort/index.html">Sort</a></td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">Sort</span></code>
+<p>Sort Type</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-type/index.html">Type</a></td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">Type</span></code>
+<p>Query Type</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="-init-.html">&lt;init&gt;</a></td>
+<td>
+<code><span class="identifier">PultusORMQuery</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$<init>(java.sql.Connection)/connection">connection</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/sql/Connection.html"><span class="identifier">Connection</span></a><span class="symbol">)</span></code>
+<p>Base Class of PultusORM API
+to execute queries</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="count.html">count</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">count</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$count(kotlin.Any)/clazz">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">Any</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Long</span></code>
+<p>Method to get count of values</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="delete.html">delete</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">delete</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$delete(kotlin.Any)/clazz">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">Any</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Method to delete value</p>
+<code><span class="keyword">fun </span><span class="identifier">delete</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$delete(kotlin.Any, ninja.sakib.pultusorm.core.PultusORMCondition)/clazz">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">Any</span><span class="symbol">, </span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$delete(kotlin.Any, ninja.sakib.pultusorm.core.PultusORMCondition)/condition">condition</span><span class="symbol">:</span>&nbsp;<a href="../-pultus-o-r-m-condition/index.html"><span class="identifier">PultusORMCondition</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Method to delete value based on condition</p>
+<code><span class="keyword">fun </span><span class="identifier">delete</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$delete(kotlin.Any, ninja.sakib.pultusorm.callbacks.Callback)/clazz">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">Any</span><span class="symbol">, </span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$delete(kotlin.Any, ninja.sakib.pultusorm.callbacks.Callback)/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="../../ninja.sakib.pultusorm.callbacks/-callback/index.html"><span class="identifier">Callback</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Method to delete value with callback</p>
+<code><span class="keyword">fun </span><span class="identifier">delete</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$delete(kotlin.Any, ninja.sakib.pultusorm.core.PultusORMCondition, ninja.sakib.pultusorm.callbacks.Callback)/clazz">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">Any</span><span class="symbol">, </span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$delete(kotlin.Any, ninja.sakib.pultusorm.core.PultusORMCondition, ninja.sakib.pultusorm.callbacks.Callback)/condition">condition</span><span class="symbol">:</span>&nbsp;<a href="../-pultus-o-r-m-condition/index.html"><span class="identifier">PultusORMCondition</span></a><span class="symbol">, </span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$delete(kotlin.Any, ninja.sakib.pultusorm.core.PultusORMCondition, ninja.sakib.pultusorm.callbacks.Callback)/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="../../ninja.sakib.pultusorm.callbacks/-callback/index.html"><span class="identifier">Callback</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Method to delete value based on condition with callback</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="drop.html">drop</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">drop</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$drop(kotlin.Any)/clazz">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">Any</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Method to delete table</p>
+<code><span class="keyword">fun </span><span class="identifier">drop</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$drop(kotlin.Any, ninja.sakib.pultusorm.callbacks.Callback)/clazz">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">Any</span><span class="symbol">, </span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$drop(kotlin.Any, ninja.sakib.pultusorm.callbacks.Callback)/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="../../ninja.sakib.pultusorm.callbacks/-callback/index.html"><span class="identifier">Callback</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Method to delete table with callback</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="get.html">get</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$get(kotlin.Any, ninja.sakib.pultusorm.core.PultusORMCondition)/clazz">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">Any</span><span class="symbol">, </span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$get(kotlin.Any, ninja.sakib.pultusorm.core.PultusORMCondition)/condition">condition</span><span class="symbol">:</span>&nbsp;<a href="../-pultus-o-r-m-condition/index.html"><span class="identifier">PultusORMCondition</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MutableList</span><span class="symbol">&lt;</span><span class="identifier">Any</span><span class="symbol">&gt;</span></code>
+<p>Method to get value based on condition</p>
+<code><span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$get(kotlin.Any)/clazz">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">Any</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MutableList</span><span class="symbol">&lt;</span><span class="identifier">Any</span><span class="symbol">&gt;</span></code>
+<p>Method to get value</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="save.html">save</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">save</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$save(kotlin.Any)/clazz">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">Any</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Method to save value</p>
+<code><span class="keyword">fun </span><span class="identifier">save</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$save(kotlin.Any, ninja.sakib.pultusorm.callbacks.Callback)/clazz">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">Any</span><span class="symbol">, </span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$save(kotlin.Any, ninja.sakib.pultusorm.callbacks.Callback)/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="../../ninja.sakib.pultusorm.callbacks/-callback/index.html"><span class="identifier">Callback</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Method to save value with callback</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="update.html">update</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">update</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$update(kotlin.Any, ninja.sakib.pultusorm.core.PultusORMUpdater)/clazz">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">Any</span><span class="symbol">, </span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$update(kotlin.Any, ninja.sakib.pultusorm.core.PultusORMUpdater)/updateQuery">updateQuery</span><span class="symbol">:</span>&nbsp;<a href="../-pultus-o-r-m-updater/index.html"><span class="identifier">PultusORMUpdater</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Method to update value</p>
+<code><span class="keyword">fun </span><span class="identifier">update</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$update(kotlin.Any, ninja.sakib.pultusorm.core.PultusORMUpdater, ninja.sakib.pultusorm.callbacks.Callback)/clazz">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">Any</span><span class="symbol">, </span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$update(kotlin.Any, ninja.sakib.pultusorm.core.PultusORMUpdater, ninja.sakib.pultusorm.callbacks.Callback)/updateQuery">updateQuery</span><span class="symbol">:</span>&nbsp;<a href="../-pultus-o-r-m-updater/index.html"><span class="identifier">PultusORMUpdater</span></a><span class="symbol">, </span><span class="identifier" id="ninja.sakib.pultusorm.core.PultusORMQuery$update(kotlin.Any, ninja.sakib.pultusorm.core.PultusORMUpdater, ninja.sakib.pultusorm.callbacks.Callback)/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="../../ninja.sakib.pultusorm.callbacks/-callback/index.html"><span class="identifier">Callback</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Method to update value with callback</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

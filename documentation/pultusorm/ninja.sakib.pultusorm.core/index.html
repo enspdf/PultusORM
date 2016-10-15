@@ -1,0 +1,255 @@
+<HTML>
+<HEAD>
+<title>ninja.sakib.pultusorm.core - pultusorm</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">pultusorm</a>&nbsp;/&nbsp;<a href=".">ninja.sakib.pultusorm.core</a><br/>
+<br/>
+<h2>Package ninja.sakib.pultusorm.core</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="-pultus-o-r-m/index.html">PultusORM</a></td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">PultusORM</span></code>
+<p>Base class of PultusORM API
+It handles database connection
+and serves queries</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-pultus-o-r-m-condition/index.html">PultusORMCondition</a></td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">PultusORMCondition</span></code>
+<p>PultusORMCondition
+Class used to provide condition on queries</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-pultus-o-r-m-query/index.html">PultusORMQuery</a></td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">PultusORMQuery</span></code>
+<p>Base Class of PultusORM API
+to execute queries</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-pultus-o-r-m-updater/index.html">PultusORMUpdater</a></td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">PultusORMUpdater</span></code>
+<p>PultusORMUpdater
+Class used to update value of fields</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="is-debug-enabled.html">isDebugEnabled</a></td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">isDebugEnabled</span><span class="symbol">: </span><span class="identifier">Boolean</span></code>
+<p>Flag to logging on off</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="object-to-json-converter.html">objectToJsonConverter</a></td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">objectToJsonConverter</span><span class="symbol">: </span><span class="identifier">Gson</span></code>
+<p>Class to Json converter</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="enable-debug-mode.html">enableDebugMode</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">enableDebugMode</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$enableDebugMode(kotlin.Boolean)/enable">enable</span><span class="symbol">:</span>&nbsp;<span class="identifier">Boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Method to enable/disable debug &amp; logging mode</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="get-user-home-directory.html">getUserHomeDirectory</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getUserHomeDirectory</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span></code>
+<p>Method to get users home directory</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="is-auto-increment.html">isAutoIncrement</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isAutoIncrement</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$isAutoIncrement(java.lang.reflect.Field)/value">value</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Field.html"><span class="identifier">Field</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Boolean</span></code>
+<p>Method to check whether type is auto increment annotated</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="is-boolean.html">isBoolean</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isBoolean</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$isBoolean(java.lang.reflect.Type)/value">value</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html"><span class="identifier">Type</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Boolean</span></code>
+<p>Method to check whether type is boolean</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="is-char.html">isChar</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isChar</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$isChar(java.lang.reflect.Type)/value">value</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html"><span class="identifier">Type</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Boolean</span></code>
+<p>Method to check whether type is char</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="is-double.html">isDouble</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isDouble</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$isDouble(java.lang.reflect.Type)/value">value</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html"><span class="identifier">Type</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Boolean</span></code>
+<p>Method to check whether type is double</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="is-equal.html">isEqual</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isEqual</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$isEqual(kotlin.String, kotlin.String)/x">x</span><span class="symbol">:</span>&nbsp;<span class="identifier">String</span><span class="symbol">, </span><span class="identifier" id="ninja.sakib.pultusorm.core$isEqual(kotlin.String, kotlin.String)/y">y</span><span class="symbol">:</span>&nbsp;<span class="identifier">String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Boolean</span></code>
+<p>Method to compare string</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="is-float.html">isFloat</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isFloat</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$isFloat(java.lang.reflect.Type)/value">value</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html"><span class="identifier">Type</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Boolean</span></code>
+<p>Method to check whether type is float</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="is-int.html">isInt</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isInt</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$isInt(java.lang.reflect.Type)/value">value</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html"><span class="identifier">Type</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Boolean</span></code>
+<p>Method to check whether type is Int</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="is-long.html">isLong</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isLong</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$isLong(java.lang.reflect.Type)/value">value</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html"><span class="identifier">Type</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Boolean</span></code>
+<p>Method to check whether type is long</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="is-primary-key.html">isPrimaryKey</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isPrimaryKey</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$isPrimaryKey(java.lang.reflect.Field)/value">value</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Field.html"><span class="identifier">Field</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Boolean</span></code>
+<p>Method to check whether type is primary key annotated</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="is-string.html">isString</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isString</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$isString(java.lang.reflect.Type)/value">value</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html"><span class="identifier">Type</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Boolean</span></code>
+<p>Method to check whether type is String</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="json-as-object.html">jsonAsObject</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">jsonAsObject</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$jsonAsObject(kotlin.Any, com.eclipsesource.json.JsonObject)/clazz">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">Any</span><span class="symbol">, </span><span class="identifier" id="ninja.sakib.pultusorm.core$jsonAsObject(kotlin.Any, com.eclipsesource.json.JsonObject)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">JsonObject</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Any</span></code>
+<p>Method to convert json to object</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="log.html">log</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">log</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$log(kotlin.String, kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<span class="identifier">String</span><span class="symbol">, </span><span class="identifier" id="ninja.sakib.pultusorm.core$log(kotlin.String, kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Method to log something to console</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="object-as-json.html">objectAsJson</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">objectAsJson</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$objectAsJson(kotlin.Any)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">Any</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">JsonObject</span></code>
+<p>Method to convert object to json via Gson</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="parse-class-name.html">parseClassName</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">parseClassName</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$parseClassName(kotlin.Any)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">Any</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span></code>
+<p>Method to parse class name from object</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="throwback.html">throwback</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">throwback</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$throwback(kotlin.String)/msg">msg</span><span class="symbol">:</span>&nbsp;<span class="identifier">String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Method to throw exception</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="to-auto-increment.html">toAutoIncrement</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toAutoIncrement</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$toAutoIncrement(java.lang.reflect.Field)/value">value</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Field.html"><span class="identifier">Field</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span></code>
+<p>Method to convert auto increment annotation to sql text</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="to-not-null.html">toNotNull</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toNotNull</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$toNotNull(java.lang.reflect.Field)/value">value</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Field.html"><span class="identifier">Field</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span></code>
+<p>Method to convert not null to sql text</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="to-primary-key.html">toPrimaryKey</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toPrimaryKey</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$toPrimaryKey(java.lang.reflect.Field)/value">value</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Field.html"><span class="identifier">Field</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span></code>
+<p>Method to convert primary key annotation to sql text</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="to-unique.html">toUnique</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toUnique</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$toUnique(java.lang.reflect.Field)/value">value</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Field.html"><span class="identifier">Field</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span></code>
+<p>Method to convert unique to sql text</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="type-to-s-q-l.html">typeToSQL</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">typeToSQL</span><span class="symbol">(</span><span class="identifier" id="ninja.sakib.pultusorm.core$typeToSQL(java.lang.reflect.Type)/value">value</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html"><span class="identifier">Type</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span></code>
+<p>Method to convert primitive types to sql string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
