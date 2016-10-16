@@ -144,7 +144,23 @@
             }<br>
 
             // Then<br>
-            pultusORM.save(student, ResponseCallback()) // Async Insertion<br>
+            pultusORM.save(student, ResponseCallback()) // Async Insertion<br><br>
+
+            val students = pultusORM.find(Student())<br>
+            for (it in students) {<br>
+            <tab1>val student = it as Student</tab1>
+            <br>
+            <tab1>println(student.studentId)</tab1>
+            <br>
+            <tab1>println(student.name)</tab1>
+            <br>
+            <tab1>println(student.department)</tab1>
+            <br>
+            <tab1>println(student.cgpa)</tab1>
+            <br>
+            <tab1>println()</tab1>
+            <br>
+            }<br>
         </div>
 
         <h3>
