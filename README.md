@@ -133,7 +133,7 @@ pultusORM.update(Student(), updater)
 pultusORM.delete(Student())
 ```
 
-**Check [Wiki](https://github.com/s4kibs4mi/PultusORM/wiki) for more examples & [API docs](https://github.com/s4kibs4mi/PultusORM/blob/master/docs/pultusorm/)**
+**Check [Wiki](https://github.com/s4kibs4mi/PultusORM/wiki) for more examples & [API docs](http://sakib.ninja/PultusORM/)**
 
 #
 #####Note :
