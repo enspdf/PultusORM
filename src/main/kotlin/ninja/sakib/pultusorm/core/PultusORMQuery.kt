@@ -8,6 +8,7 @@ import java.sql.Connection
 import java.sql.ResultSet
 import java.sql.Statement
 import kotlin.properties.Delegates
+import kotlin.concurrent.thread
 
 /**
  * := Coded with love by Sakib Sami on 9/27/16.
@@ -66,7 +67,7 @@ class PultusORMQuery(connection: Connection) {
      * @param callback
      */
     fun save(clazz: Any, callback: Callback) {
-        kotlin.run {
+        thread(start = true) {
             try {
                 createTable(clazz)
 
@@ -189,7 +190,7 @@ class PultusORMQuery(connection: Connection) {
      * @param callback
      */
     fun update(clazz: Any, updateQuery: PultusORMUpdater, callback: Callback) {
-        kotlin.run {
+        thread(start = true) {
             createTable(clazz)
 
             try {
@@ -239,9 +240,9 @@ class PultusORMQuery(connection: Connection) {
      * @param callback
      */
     fun delete(clazz: Any, callback: Callback) {
-        createTable(clazz)
+        thread(start = true) {
+            createTable(clazz)
 
-        kotlin.run {
             try {
                 statement.execute(Builder().delete(clazz))
                 callback.onSuccess(Type.DELETE)
@@ -259,9 +260,9 @@ class PultusORMQuery(connection: Connection) {
      * @param callback
      */
     fun delete(clazz: Any, condition: PultusORMCondition, callback: Callback) {
-        createTable(clazz)
+        thread(start = true) {
+            createTable(clazz)
 
-        kotlin.run {
             try {
                 statement.execute(Builder().delete(clazz, condition))
                 callback.onSuccess(Type.DELETE)
@@ -291,7 +292,7 @@ class PultusORMQuery(connection: Connection) {
      * @param callback
      */
     fun drop(clazz: Any, callback: Callback) {
-        kotlin.run {
+        thread(start = true) {
             try {
                 if (isTableExists(clazz.javaClass.simpleName)) {
                     statement.execute(Builder().drop(clazz))
