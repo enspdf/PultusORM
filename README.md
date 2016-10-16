@@ -1,5 +1,5 @@
 # PultusORM [![](https://jitpack.io/v/ninja.sakib/PultusORM.svg)](https://jitpack.io/#ninja.sakib/PultusORM)
-PultusORM is a sqlite ORM library for kotlin on top of sqlite jdbc driver.
+PultusORM is a sqlite ORM library for kotlin & Android.
 
 Status : Active<br>
 
@@ -26,7 +26,7 @@ allprojects {
 And
 ```
 dependencies {
-    compile 'ninja.sakib:PultusORM:beta-0.0.5'
+    compile 'ninja.sakib:PultusORM:beta-0.0.6'
 }
 ```
 
@@ -44,79 +44,72 @@ And
 <dependency>
     <groupId>ninja.sakib</groupId>
     <artifactId>PultusORM</artifactId>
-    <version>beta-0.0.5</version>
+    <version>beta-0.0.6</version>
 </dependency>
 ```
 
-In case you need jar [download](https://jitpack.io/ninja/sakib/PultusORM/beta-0.0.5/PultusORM-beta-0.0.5.jar).
+In case you need jar [download](https://jitpack.io/ninja/sakib/PultusORM/beta-0.0.6/PultusORM-beta-0.0.6.jar).
 
-[More option...](https://jitpack.io/#ninja.sakib/PultusORM/beta-0.0.5)
+[More option...](https://jitpack.io/#ninja.sakib/PultusORM/beta-0.0.6)
 
 ### Examples
 
 ##### Insert Value
 ```
-class User() {
+class Student {
     @PrimaryKey
     @AutoIncrement
-    var userId: Int = 0
-    @NotNull
+    var studentId: Int = 0
     var name: String? = null
-    var age: Int = 0
+    var department: String? = null
+    var cgpa: Double = 0.0
 }
 
 val pultusORM: PultusORM = PultusORM("test.db", "/Users/s4kib/")
 
-val user: User = User()
-user.userId = Math.abs(UUID.randomUUID().mostSignificantBits.toInt())
-user.name = "Sakib"
-user.age = 24
-pultusORM.save(user)
+val student: Student = Student()
+student.name = "Sakib Sayem"
+student.department = "CSE"
+student.cgpa = 2.3
+pultusORM.save(student)
 ```
 
 ##### Retrieve Value
 ```
-val result: MutableList<Any> = pultusORM.get(User())
-for (it in result) {
-    val user: User = it as User
-    println("${user.userId}")
-    println("${user.name}")
-    println("${user.age}")
+val students = pultusORM.find(Student())
+for (it in students) {
+    val student = it as Student
+    println(student.studentId)
+    println(student.name)
+    println(student.department)
+    println(student.cgpa)
     println()
 }
 ```
 
 ###### Result
-90815381<br>
-Sakib<br>
-24
-
-553825217<br>
-Sakib<br>
-24
-
-1125692361<br>
-Sakib<br>
-24
+1<br>
+Sakib Sayem<br>
+CSE
+2.3
 
 ##### Retrieve Value based on condition
 ```
 val condition: PultusORMCondition = PultusORMCondition.Builder()
-        .eq("userId", 802505126)
-        .and()     // Concating two condition with and
-        .eq("age", 24)
-        .or()
-        .startsWith("name", "sami")
-        .sort("age", PultusORMQuery.Sort.DESCENDING)
-        .build()
+            .eq("name", "sakib")
+            .and()
+            .greaterEq("cgpa", 18)
+            .or()
+            .startsWith("name", "sami")
+            .sort("name", PultusORMQuery.Sort.DESCENDING)
+            .sort("department", PultusORMQuery.Sort.ASCENDING)
+            .build()
 
-val result: MutableList<Any> = pultusORM.get(User(), condition)
-for (it in result) {
-    val user: User = it as User
-    println("${user.userId}")
-    println("${user.name}")
-    println("${user.age}")
-    println()
+val students = pultusORM.find(Student(), condition)
+for (it in students) {
+    val student = it as Student
+    println("${student.studentId}")
+    println("${student.name}")
 }
 ```
 
@@ -124,20 +117,20 @@ for (it in result) {
 ```
 // values will be updated based on this condition
 val condition: PultusORMCondition = PultusORMCondition.Builder()
-        .eq("userId", 802505126)
-        .build()
+            .eq("name", "Sakib")
+            .build()
 
-val updater: PultusORMUpdater = PultusORMUpdater()
-updater.set("name", "Sami")
-updater.condition(condition)    // condition is optional
+val updater: PultusORMUpdater = PultusORMUpdater.Builder()
+            .set("name", "Sayan Nur")
+            .condition(condition)   // condition is optional
+            .build()
 
-pultusORM.update(User(), updater)
+pultusORM.update(Student(), updater)
 ```
 
 ##### Delete Value
 ```
-val pultusORM: PultusORM = PultusORM("test.db", "/Users/s4kib/")
-pultusORM.delete(User())
+pultusORM.delete(Student())
 ```
 
 **Check [Wiki](https://github.com/s4kibs4mi/PultusORM/wiki) for more examples & [API docs](https://github.com/s4kibs4mi/PultusORM/blob/master/docs/pultusorm/)**
@@ -161,7 +154,6 @@ as that will be handled by sqlite.
 ### License
 Copyright &copy; Sakib Sami<br>
 Distributed under [MIT](https://github.com/s4kibs4mi/PultusORM/blob/master/LICENSE) license
-
 
 ### Naming
 You may want to know about **Pultus**.<br>
