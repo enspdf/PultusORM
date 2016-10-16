@@ -49,15 +49,22 @@ class PultusORM {
      * Method to initialize connection to database
      */
     private fun connect() {
-        Class.forName("org.sqlite.JDBC")
-
         if (databaseName!!.endsWith(".db").not())
             databaseName = "$databaseName.db"
 
         if (databasePath == null || databasePath!!.isEmpty())
             databasePath = getUserHomeDirectory()
 
-        connection = DriverManager.getConnection("jdbc:sqlite:$databasePath/$databaseName")
+        var dbUrl = ""
+        if (isAndroidPlatform()) {
+            Class.forName("org.sqldroid.SQLDroidDriver")
+            dbUrl = "jdbc:sqldroid:$databasePath/$databaseName"
+        } else {
+            Class.forName("org.sqlite.JDBC")
+            dbUrl = "jdbc:sqlite:$databasePath/$databaseName"
+        }
+
+        connection = DriverManager.getConnection(dbUrl)
     }
 
     /**

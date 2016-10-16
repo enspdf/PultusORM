@@ -41,5 +41,7 @@ dependencies {
     compile group: 'org.xerial', name: 'sqlite-jdbc', version: '3.14.2.1'
     compile group: 'org.jetbrains.dokka', name: 'dokka-gradle-plugin', version: '0.9.9'
 
+    compile 'org.sqldroid:sqldroid:1.0.3'
+
     testCompile 'junit:junit:4.12'
 }

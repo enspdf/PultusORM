@@ -147,7 +147,7 @@ fun isChar(value: Type): Boolean {
  * @return Boolean
  */
 fun isPrimaryKey(value: Field): Boolean {
-    return value.getDeclaredAnnotation(PrimaryKey::class.java) != null
+    return value.getAnnotation(PrimaryKey::class.java) != null
 }
 
 /**
@@ -156,7 +156,7 @@ fun isPrimaryKey(value: Field): Boolean {
  * @return String
  */
 fun toPrimaryKey(value: Field): String {
-    if (value.getDeclaredAnnotation(PrimaryKey::class.java) != null)
+    if (value.getAnnotation(PrimaryKey::class.java) != null)
         return "PRIMARY KEY"
     return ""
 }
@@ -167,7 +167,7 @@ fun toPrimaryKey(value: Field): String {
  * @return Boolean
  */
 fun isAutoIncrement(value: Field): Boolean {
-    return value.getDeclaredAnnotation(AutoIncrement::class.java) != null
+    return value.getAnnotation(AutoIncrement::class.java) != null
 }
 
 /**
@@ -176,7 +176,7 @@ fun isAutoIncrement(value: Field): Boolean {
  * @return String
  */
 fun toAutoIncrement(value: Field): String {
-    if (value.getDeclaredAnnotation(AutoIncrement::class.java) != null)
+    if (value.getAnnotation(AutoIncrement::class.java) != null)
         return "AUTOINCREMENT"
     return ""
 }
@@ -187,7 +187,7 @@ fun toAutoIncrement(value: Field): String {
  * @return String
  */
 fun toNotNull(value: Field): String {
-    if (value.getDeclaredAnnotation(NotNull::class.java) != null)
+    if (value.getAnnotation(NotNull::class.java) != null)
         return "NOT NULL"
     return ""
 }
@@ -198,7 +198,7 @@ fun toNotNull(value: Field): String {
  * @return String
  */
 fun toUnique(value: Field): String {
-    if (value.getDeclaredAnnotation(Unique::class.java) != null)
+    if (value.getAnnotation(Unique::class.java) != null)
         return "UNIQUE"
     return ""
 }
@@ -243,4 +243,13 @@ fun objectAsJson(value: Any): JsonObject {
  */
 fun jsonAsObject(clazz: Any, value: JsonObject): Any {
     return objectToJsonConverter.fromJson(value.toString(), clazz.javaClass)
+}
+
+fun isAndroidPlatform(): Boolean {
+    try {
+        Class.forName("android.app.Activity")
+        return true
+    } catch (exception: Exception) {
+        return false
+    }
 }
