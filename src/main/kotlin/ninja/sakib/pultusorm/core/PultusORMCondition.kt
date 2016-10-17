@@ -236,7 +236,7 @@ class PultusORMCondition private constructor(builder: Builder) {
             if (groupQuery.isNotEmpty())
                 groupQuery.append(",")
 
-            groupQuery.append("$fieldName")
+            groupQuery.append(fieldName)
             return this
         }
 
